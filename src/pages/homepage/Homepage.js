@@ -3,7 +3,15 @@ import './Homepage.css'
 
 const Homepage = () => {
   return (
-    <div>Homepage</div>
+    <>
+
+      {/* navbar goes here */}
+
+      <div className='homepage-content'>gnringibn </div>
+
+      {/* footer goes here */}
+
+    </>
   )
 }
 
