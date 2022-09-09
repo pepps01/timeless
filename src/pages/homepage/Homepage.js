@@ -11,7 +11,6 @@ const Homepage = () => {
     <>
 
       {/* navbar goes here */}
-
       <div className='homepage-container'>
         <div className='homepage-top-div'>
           <div className='homepage-left' data-aos="fade-right">
@@ -156,7 +155,7 @@ const Homepage = () => {
       </div>
 
       {/* footer goes here */}
-
+      {/* <Footer /> */}
     </>
   )
 }

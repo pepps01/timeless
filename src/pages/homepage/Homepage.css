@@ -1,3 +1,7 @@
+.homepage-content {
+    display: flex;
+    margin-top: 0;
+}
 .homepage-top-div {
     display: flex;
     justify-content: space-between;
