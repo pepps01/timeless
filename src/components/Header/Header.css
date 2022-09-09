@@ -24,6 +24,12 @@ Navbar Styling
     padding-bottom: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    background: linear-gradient(
+      165.92deg,
+      rgba(242, 241, 248, 0.73) 16.61%,
+      rgba(242, 241, 248, 0.75) 89.8%
+    );
+    position: fixed;
   }
 
   .landingPageLogo {

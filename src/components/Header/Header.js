@@ -1,7 +1,8 @@
 import React from 'react'
 import './Header.css'
 import { FaAlignRight } from 'react-icons/fa';
-import {Links} from './Links';
+import { Links } from './Links';
+import { Link } from 'react-router-dom';
 
 const Header = ({ setIsOpen, isOpen }) => {
   return (
@@ -14,7 +15,9 @@ const Header = ({ setIsOpen, isOpen }) => {
         <ul className="navbarLinks">
           {Links.map((link, index) => (
             <div key={index} className="navbarLink">
-              <li>{link.name}</li>
+              <Link to={link.path}>
+                <li>{link.name}</li>
+              </Link>
             </div>
           ))}
         </ul>
