@@ -12,10 +12,8 @@
 }
 
 html, body {
-  margin: 0;
-  padding: 0;
-  /* width: 100%; */
-  /* overflow: hidden; */
+  background: linear-gradient(119.4deg, #F8F7FB 1.4%, rgba(248, 247, 251, 0.99) 114.63%);
+  padding: 0rem 3rem;
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
@@ -37,7 +35,7 @@ body {
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
   body {
-    margin: 0.3rem 0.7rem;
     zoom: 0.9;
+    padding: 0rem 1rem;
   }
 }
