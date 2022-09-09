@@ -63,6 +63,7 @@ Navbar Styling
 
   .navbarLink>li {
     margin-right: 0.2rem;
+    cursor: pointer;
   }
 
   .navbarLink {

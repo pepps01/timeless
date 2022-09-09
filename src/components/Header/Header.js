@@ -15,15 +15,10 @@ const Header = ({ setIsOpen, isOpen }) => {
           {Links.map((link, index) => (
             <div key={index} className="navbarLink">
               <li>{link.name}</li>
-              <span>
-                {link.subLinks && (
-                  <img src='/images/down.png' alt='down arrarow' />
-                )}
-              </span>
             </div>
           ))}
         </ul>
-        <div className="getStartedBtn"><a href="/register">Contact Us</a></div>
+        <div className="getStartedBtn"><a href="/contact">Contact Us</a></div>
         <div onClick={() => setIsOpen((isOpen) => !isOpen)} className="hamburger"><FaAlignRight size={20} /></div>
       </div>
     </nav>
