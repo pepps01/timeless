@@ -31,42 +31,6 @@ const Careers = () => {
         }
       ]
     
-    // {
-    //   data:[
-    //     {
-    //       title:"Backend Engineer",
-    //       value:"Technology & Innovation"
-    //     }
-    //   ]
-
-    // },
-    // {
-    //   data:[
-    //     {
-    //       title:"Backend Engineer",
-    //       value:"Technology & Innovation"
-    //     }
-    //   ]
-    // },
-    // {
-    //   data:[
-    //     {
-    //       title:"Backend Engineer",
-    //       value:"Technology & Innovation"
-    //     }
-    //   ]
-    // },
-    // {
-    //   data:[
-    //     {
-    //       title:"Backend Engineer",
-    //       value:"Technology & Innovation"
-    //     }
-    //   ]
-
-    // }
-
-
   return (
     <div>
       {/* <div class="rotated">
@@ -83,7 +47,7 @@ const Careers = () => {
           {careers?.map((data,index)=>(
 
           
-          <div className = "flex justify-around items-center bg-slate-400 w-[1001px] h-[115px] rounded-[17.81px]" key ={index}>
+          <div className = "flex justify-around items-center card w-[1001px] h-[115px] rounded-[17.81px]" key ={index}>
             <div>
               <p className = "font-semibold text-[1.125rem] leading-[22.86px]">{data?.col1.title}</p>
               <p className = "text-[0.875rem] leading-[22.86px] text-[#090F47]">{data?.col1.value}</p>
