@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './App.css';
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import About from './pages/about/About';
 import Careers from './pages/careers/Careers';
@@ -35,14 +36,16 @@ function App() {
             </div>
           </div>
         </div>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <div className="global">
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/careers" element={<Careers />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
       </Router>
       <Footer />
     </>

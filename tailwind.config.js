@@ -4,9 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        afriTextHeader: "#090F47",
         afriSubHeader: "#8274ED",
         afriText: "#8487A3",
+        Purple: "#6B5DD3",
+        PrimaryTextColor: "#090F47",
+        SecondaryTextColor: "#8487A3",
       },
     },
   },

@@ -7,7 +7,6 @@ footer {
     background: #E3E5FF;
     position: relative;
 }
-@media screen and (max-width: 1728px) {
   .topFooter {
     display: flex;
     padding: 6rem;
@@ -53,7 +52,7 @@ footer {
     padding: 0;
     padding-top: 1rem;
   }
-  .topFooter2 > ul > li {
+  .topFooter2 > ul > a > li {
     padding-bottom: 1rem;
     color: #090f47;
   }
@@ -64,7 +63,7 @@ footer {
   .topFooter3p {
     color: #090f47 !important;
   }
-}
+
 @media screen and (max-width: 768px) {
   .topFooter {
     flex-direction: column;

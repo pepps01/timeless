@@ -29,22 +29,22 @@ const About = () => {
         </div>
 
         <div className='about-gallery'>
-          <div className='image-gallery' data-aos="fade-right" data-aos-duration="1500">
+          <div className='image-gallery-1' data-aos="fade-right" data-aos-duration="1500">
             <img src='/images/gallery1.png' alt='' />
           </div>
-          <div className='image-gallery' data-aos="fade-right" data-aos-duration="1000">
+          <div className='image-gallery-2' data-aos="fade-right" data-aos-duration="1000">
             <img src='/images/gallery2.png' alt='' />
           </div>
-          <div className='image-gallery' data-aos="fade-right" data-aos-duration="500">
+          <div className='image-gallery-3' data-aos="fade-right" data-aos-duration="500">
             <img src='/images/gallery3.png' alt='' />
           </div>
-          <div className='image-gallery' data-aos="fade-left" data-aos-duration="500">
+          <div className='image-gallery-4' data-aos="fade-left" data-aos-duration="500">
             <img src='/images/gallery4.png' alt='' />
           </div>
-          <div className='image-gallery' data-aos="fade-left" data-aos-duration="1000">
+          <div className='image-gallery-5' data-aos="fade-left" data-aos-duration="1000">
             <img src='/images/gallery5.png' alt='' />
           </div>
-          <div className='image-gallery' data-aos="fade-left" data-aos-duration="1500">
+          <div className='image-gallery-6' data-aos="fade-left" data-aos-duration="1500">
             <img src='/images/gallery6.png' alt='' />
           </div>
         </div>
@@ -85,8 +85,8 @@ const About = () => {
             </div>
           </div>
           <div className='our-values'>
-            <img src='/images/avatar.svg' alt='' />
             <p>Our Values</p>
+            <img src='/images/avatar.svg' alt='' />
           </div>
           <div className='vision'>
             <div className='mission-vision-head'>

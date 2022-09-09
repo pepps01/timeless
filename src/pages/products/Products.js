@@ -6,7 +6,7 @@ const Products = () => {
   return (
     <div className='px-8 md:px-16'>
       <div className='flex flex-col py-12 md:py-28'>
-        <h2 className='text-4xl font-bold text-afriTextHeader text-center'>
+        <h2 className='text-4xl font-bold text-PrimaryTextColor text-center'>
           Our Products
         </h2>
         <p className='text-center px-0 pt-4 md:px-14 md:py-4'>
@@ -19,27 +19,27 @@ const Products = () => {
       <div className='flex py-16 flex-col-reverse md:flex-row'>
         <div className='md:w-1/2'>
           <h6 className='text-afriSubHeader'>MOBILE APP</h6>
-          <h3 className='font-bold text-3xl text-afriTextHeader py-4'>
+          <h3 className='font-bold text-3xl text-PrimaryTextColor py-4'>
             Rigour Plus
           </h3>
-          <p className='afriText py-2'>
+          <p className='text-SecondaryTextColor py-2'>
             RigourPlus is everything you need to elevate your health experience
             at your fingertips. Specifically made with you in mind, we guarantee
             a very user-friendly design and experience.
           </p>
-          <p className='afriText py-2'>
+          <p className='text-SecondaryTextColor py-2'>
             Rigour+ connects you to a broad network of medical service providers
             and services ensuring you are delivered personalized treatment
             whenever and wherever you need it.
           </p>
-          <p className='afriText py-2'>
+          <p className='text-SecondaryTextColor py-2'>
             Rigour+ goes beyond your imaginations to offer you a truly holistic
             suite of services that ensures you have fewer things to worry about.{" "}
             <br />
           </p>
           <div>
             <div>
-              <h5 className='font-bold text-lg text-afriTextHeader py-4'>
+              <h5 className='font-bold text-lg text-PrimaryTextColor py-4'>
                 Features
               </h5>
             </div>
@@ -72,14 +72,14 @@ const Products = () => {
             </div>
 
             <div className="md:flex py-8">
-              <div className="flex py-2 px-4 md:mb-0 mb-4 bg-afriTextHeader items-center rounded-lg">
+              <div className="flex py-2 px-4 md:mb-0 mb-4 bg-PrimaryTextColor items-center rounded-lg">
                 <ImageComponent src='android.png' />
                 <div className="pl-4">
                   <h6 className="text-white text-sm">GET IT ON</h6>
                   <p className="text-white text-sm">Google Play</p>
                 </div>
               </div>
-              <div className="flex py-2 px-4 bg-afriTextHeader items-center md:ml-8 rounded-lg">
+              <div className="flex py-2 px-4 bg-PrimaryTextColor items-center md:ml-8 rounded-lg">
                 <ImageComponent src='apple.png' />
                 <div className="pl-4">
                   <h6 className="text-white text-sm">Download On The</h6>
@@ -102,20 +102,20 @@ const Products = () => {
 
         <div className='md:w-1/2'>
           <h6 className='text-afriSubHeader'>WEB APP</h6>
-          <h3 className='font-bold text-3xl text-afriTextHeader py-4'>Picon</h3>
-          <p className='afriText py-2'>
+          <h3 className='font-bold text-3xl text-PrimaryTextColor py-4'>Picon</h3>
+          <p className='text-SecondaryTextColor py-2'>
             Our service provider platform enables through our polaris platform,
             medical practitioners interested in shaping the future of primary
             care are blended into the afrihealth ecosystem as part of our
             physicians responsible for dispensing patient care both virtually
             and in person.
           </p>
-          <p className='afriText py-2'>
+          <p className='text-SecondaryTextColor py-2'>
             with polaris, your practice is simplified as we have integrated
             everything you need to deliver telecare at your best including
             telemedicine, electronic medical records, automated billing. 
           </p>
-          <p className='afriText py-2'>
+          <p className='text-SecondaryTextColor py-2'>
             Polaris allows you to increase your revenue drastically, expand your
             clientele by practising beyond borders, leaping over administrative
             hurdles while improving your operational competence. <br />
@@ -130,8 +130,8 @@ const Products = () => {
       <div className='md:flex py-16'>
         <div className='md:w-1/2'>
           <h6 className='text-afriSubHeader'>WEB APP</h6>
-          <h3 className='font-bold text-3xl text-afriTextHeader py-4'>Polaris</h3>
-          <p className='afriText py-2'>
+          <h3 className='font-bold text-3xl text-PrimaryTextColor py-4'>Polaris</h3>
+          <p className='text-SecondaryTextColor py-2'>
             Our service provider platform enables we believe in re-enforcing
             your trust in the manufacturing & distribution of drugs through
             technology-enabled transparency. in collaboration with the national
@@ -140,7 +140,7 @@ const Products = () => {
             value chain standards. picon is a cloud-based holistic track and
             trace system that aims to eliminate the spread of counterfeit drugs.
             </p>
-            <p className='afriText py-2'>
+            <p className='text-SecondaryTextColor py-2'>
             picon generates, stores, and aggregates serialization data for
             uniquely identifying every product at all levels of the value chain.
             our software also generates unique scannable gs1 barcodes & qr codes

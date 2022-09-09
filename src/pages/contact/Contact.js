@@ -355,98 +355,98 @@ const Contact = () => {
         </div>
 
         <div className=" z-20 bg-white shadow-md rounded-[34.33px] pt-[51.31px] pl-[37.52px] pr-[38.52px]  pb-[25.98px] mb-4 mt-[41px] lg:ml-[60px] xl:ml-[60px]">
-          <div class="">
-            <form class="">
-              <div class="mb-4">
+          <div className="">
+            <form className="">
+              <div className="mb-4">
                 <label
-                  class="block text-gray-700 text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
-                  for="username"
+                  className="block text-gray-700 text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
+                  htmlFor="username"
                 >
                   Full Name
                 </label>
                 <input
-                  class=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="fullname"
                   type="text"
                   placeholder="Full Name"
                 />
               </div>
 
-              <div class="mb-4">
+              <div className="mb-4">
                 <label
-                  class="block text-gray-700 mt-[29px] text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
-                  for="username"
+                  className="block text-gray-700 mt-[29px] text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
+                  htmlFor="username"
                 >
                   Email
                 </label>
                 <input
-                  class=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="email"
                   type="text"
                   placeholder="Email"
                 />
               </div>
 
-              <div class="mb-4">
+              <div className="mb-4">
                 <label
-                  class="block  text-[#090F47] mt-[29px] text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
-                  for="username"
+                  className="block  text-[#090F47] mt-[29px] text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
+                  htmlFor="username"
                 >
                   Phone Number
                 </label>
                 <input
-                  class=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="phone"
                   type="text"
                   placeholder="Phone Number"
                 />
               </div>
 
-              <div class="mb-4">
+              <div className="mb-4">
                 <label
-                  class="block text-gray-700 mt-[29px] text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
-                  for="Company"
+                  className="block text-gray-700 mt-[29px] text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
+                  htmlFor="Company"
                 >
                   Company
                 </label>
                 <input
-                  class=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="Company"
                   type="text"
                   placeholder="Company"
                 />
               </div>
 
-              <div class="mb-4">
+              <div className="mb-4">
                 <label
-                  class="block  text-gray-700 mt-[29px]  text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
-                  for="Company"
+                  className="block  text-gray-700 mt-[29px]  text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
+                  htmlFor="Company"
                 >
                   Message
                 </label>
                 <input
-                  class=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="Company"
                   type="text"
                   placeholder="Message"
                 />
               </div>
 
-              <div class="mb-4">
+              <div className="mb-4">
                 <label
-                  for="message"
-                  class="block mb-2 mx-0 text-sm font-medium text-gray-900 dark:text-gray-400"
+                  htmlFor="message"
+                  className="block mb-2 mx-0 text-sm font-medium text-gray-900 dark:text-gray-400"
                 >
                   Message
                 </label>
                 <textarea
                   id="message"
                   rows="3"
-                  class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Add Message"
                 ></textarea>
               </div>
-              <div class="">
+              <div className="">
                 <div className="flex text-[#090F47] hover:text-blue-800">
                   <svg
                     
@@ -463,7 +463,7 @@ const Contact = () => {
                   </svg>
 
                   <a
-                    class="inline-block font-bold text-sm "
+                    className="inline-block font-bold text-sm "
                     href="#"
                   >
                     Add Attachement
@@ -471,7 +471,7 @@ const Contact = () => {
                 </div>
                 <div className = "flex justify-end ">
                   <button
-                    class="bg-[#6B5DD3] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    className="bg-[#6B5DD3] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                     type="button"
                   >
                     Sign In

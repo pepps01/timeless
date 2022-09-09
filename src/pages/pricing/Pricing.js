@@ -36,8 +36,8 @@ const classicFeatures = [
 const Pricing = () => {
   return (
     <div className='px-8 md:px-16 py-16'>
-      <div className='flex flex-col md:py-28'>
-        <h2 className='text-4xl font-bold text-afriTextHeader text-center'>
+      <div className='flex flex-col md:py-16'>
+        <h2 className='text-4xl font-bold text-PrimaryTextColor text-center'>
           Flexible plans
         </h2>
         <p className='text-center md:px-14 md:py-4'>
@@ -46,16 +46,17 @@ const Pricing = () => {
       </div>
 
       <div className='flex flex-wrap relative justify-center items-center'>
+        <ImageComponent src="Pills.png" className="absolute top-0 z-20" />
         <Card
           className='bg-white z-5 p-4 text-white rounded-2xl w-72 lg:-rotate-12 h-max m-4'
           title='Classic Afrihealth'
           amount='29'
           features={classicFeatures}
-          color="text-afriTextHeader"
+          color="text-PrimaryTextColor"
           text='Choose a prefered health price plan that works best for you and yours.'
         />
         <Card
-          className='bg-afriTextHeader z-10 p-4 text-white rounded-2xl w-72 h-max m-4'
+          className='bg-PrimaryTextColor z-10 p-4 text-white rounded-2xl w-72 h-max m-4'
           title='Classic Afrihealth'
           amount='29'
           features={classicFeatures}
@@ -67,7 +68,7 @@ const Pricing = () => {
           title='Classic Afrihealth'
           amount='29'
           features={classicFeatures}
-          color="text-afriTextHeader"
+          color="text-PrimaryTextColor"
           text='Choose a prefered health price plan that works best for you and yours.'
         />
       </div>

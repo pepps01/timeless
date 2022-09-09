@@ -5,6 +5,7 @@
 .homepage-top-div {
     display: flex;
     justify-content: space-between;
+    padding: 4rem 2rem 0rem 2rem;
     margin-bottom: 6rem;
 }
 
@@ -57,7 +58,7 @@
 }
 
 .action-buttons {
-    width: 40%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -228,6 +229,8 @@ p {
 
 .homepage-customers {
     display: flex;
+    width: 100%;
+    padding: 2rem;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 6rem;
@@ -239,11 +242,12 @@ p {
 }
 
 .customers-right {
-    width: 35%;
-    text-align: right;
+    width: 50%;
 }
 
 .customers-right h3 {
+    text-align: right;
+    margin-left: 8rem;
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
@@ -252,7 +256,10 @@ p {
     margin-bottom: 0;
 }
 
-.customers-right p {
+.customers-right > p {
+    text-align: right;
+    margin-left: 8rem;
+    padding-top: 2rem;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;

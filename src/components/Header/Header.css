@@ -4,12 +4,18 @@ Navbar Styling
 --------------------
 */
 /* Desktop view */
-
-@media screen and (max-width: 1728px) {
+.active {
+  color: #090F47;
+  font-weight: bold;
+}
+.inactive {
+  color: #8487A3;
+  font-weight: bold;
+}
   .mobileNavbar {
     display: none;
   }
-
+  
   .navbar {
     display: flex;
   }
@@ -24,12 +30,15 @@ Navbar Styling
     padding-bottom: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    backdrop-filter: blur(40px);
     background: linear-gradient(
       165.92deg,
       rgba(242, 241, 248, 0.73) 16.61%,
       rgba(242, 241, 248, 0.75) 89.8%
     );
-    position: fixed;
+    position: sticky;
+    top: 0;
+    height: 7rem;
   }
 
   .landingPageLogo {
@@ -38,15 +47,15 @@ Navbar Styling
     padding: 10px;
   }
 
-  .landingPageLogo>img {
+  .landingPageLogo > img {
     width: 36px;
     height: 36px;
   }
 
-  .landingPageLogo>h2 {
+  .landingPageLogo > h2 {
     margin-left: 5px;
     margin-top: 10px;
-    color: #090F47;
+    color: #090f47;
     /* color: #6b5dd3; */
     font-size: 22px;
   }
@@ -67,7 +76,7 @@ Navbar Styling
     display: flex;
   }
 
-  .navbarLink>li {
+  .navbarLink > li {
     margin-right: 0.2rem;
     cursor: pointer;
   }
@@ -87,7 +96,7 @@ Navbar Styling
       color: #fff;
       margin: 10px;
     } */
-  .getStartedBtn>a {
+  .getStartedBtn > a {
     text-decoration: none;
     color: #fff;
   }
@@ -103,7 +112,7 @@ Navbar Styling
   .desktopNavbarBtn {
     display: flex;
   }
-}
+
 
 /* Mobile view */
 @media screen and (max-width: 768px) {
@@ -163,7 +172,7 @@ Navbar Styling
     padding-left: 0.5rem;
   }
 
-  .navbarLink>li {
+  .navbarLink > li {
     font-size: 1rem;
     color: #fff;
   }
@@ -181,7 +190,7 @@ Navbar Styling
     margin-top: 2rem;
   }
 
-  .getStartedBtn1>a {
+  .getStartedBtn1 > a {
     padding: 0.5rem;
     text-decoration: none;
     border: 2px solid #6b5dd3;
