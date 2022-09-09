@@ -1,7 +1,7 @@
 .homepage-top-div {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 }
 
 .homepage-left {
@@ -106,7 +106,7 @@
 }
 
 .homepage-feature-div {
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 }
 
 .feature-top {
@@ -226,7 +226,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 }
 
 .customers-left {
