@@ -35,7 +35,7 @@ const classicFeatures = [
 ];
 const Pricing = () => {
   return (
-    <div className='px-16 py-16'>
+    <div className='px-8 md:px-16 py-16'>
       <div className='flex flex-col md:py-28'>
         <h2 className='text-4xl font-bold text-afriTextHeader text-center'>
           Flexible plans

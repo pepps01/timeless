@@ -4,20 +4,20 @@ import ImageComponent from "../../components/ImageComponent";
 
 const Products = () => {
   return (
-    <div className='px-16'>
-      <div className='flex flex-col md:py-28'>
+    <div className='px-8 md:px-16'>
+      <div className='flex flex-col py-12 md:py-28'>
         <h2 className='text-4xl font-bold text-afriTextHeader text-center'>
           Our Products
         </h2>
-        <p className='text-center md:px-14 md:py-4'>
+        <p className='text-center px-0 pt-4 md:px-14 md:py-4'>
           Get thrust into the future of health care today. Our unique approach
           to improving universal access to healthcare is reinforced by our
           expertise in leveraging our clinical and technological assets so they
           work in perfect sync for you.
         </p>
       </div>
-      <div className='flex py-16'>
-        <div className='w-1/2'>
+      <div className='flex py-16 flex-col-reverse md:flex-row'>
+        <div className='md:w-1/2'>
           <h6 className='text-afriSubHeader'>MOBILE APP</h6>
           <h3 className='font-bold text-3xl text-afriTextHeader py-4'>
             Rigour Plus
@@ -44,7 +44,7 @@ const Products = () => {
               </h5>
             </div>
 
-            <div className='flex'>
+            <div className='md:flex'>
               <div className='flex flex-col'>
                 <div className='flex items-center py-1'>
                   <ImageComponent src='check.png' />
@@ -71,15 +71,15 @@ const Products = () => {
               </div>
             </div>
 
-            <div className="flex py-8">
-              <div className="flex py-2 px-4 bg-afriTextHeader items-center rounded-lg">
+            <div className="md:flex py-8">
+              <div className="flex py-2 px-4 md:mb-0 mb-4 bg-afriTextHeader items-center rounded-lg">
                 <ImageComponent src='android.png' />
                 <div className="pl-4">
                   <h6 className="text-white text-sm">GET IT ON</h6>
                   <p className="text-white text-sm">Google Play</p>
                 </div>
               </div>
-              <div className="flex py-2 px-4 bg-afriTextHeader items-center ml-8 rounded-lg">
+              <div className="flex py-2 px-4 bg-afriTextHeader items-center md:ml-8 rounded-lg">
                 <ImageComponent src='apple.png' />
                 <div className="pl-4">
                   <h6 className="text-white text-sm">Download On The</h6>
@@ -90,17 +90,17 @@ const Products = () => {
           </div>
         </div>
 
-        <div className='w-1/2'>
+        <div className='md:w-1/2'>
           <ImageComponent src='img2.1.png' />
         </div>
       </div>
 
-      <div className='flex py-16'>
-        <div className='w-1/2'>
+      <div className='md:flex py-16'>
+        <div className='md:w-1/2'>
           <ImageComponent src='img2.2.png' />
         </div>
 
-        <div className='w-1/2'>
+        <div className='md:w-1/2'>
           <h6 className='text-afriSubHeader'>WEB APP</h6>
           <h3 className='font-bold text-3xl text-afriTextHeader py-4'>Picon</h3>
           <p className='afriText py-2'>
@@ -127,8 +127,8 @@ const Products = () => {
         </div>
       </div>
 
-      <div className='flex py-16'>
-        <div className='w-1/2'>
+      <div className='md:flex py-16'>
+        <div className='md:w-1/2'>
           <h6 className='text-afriSubHeader'>WEB APP</h6>
           <h3 className='font-bold text-3xl text-afriTextHeader py-4'>Polaris</h3>
           <p className='afriText py-2'>
@@ -156,8 +156,8 @@ const Products = () => {
           </div>
         </div>
 
-        <div className='w-1/2 relative'>
-          <ImageComponent src='macbook.png' className="absolute ml-24 mt-44 w-96" />
+        <div className='md:w-1/2 relative'>
+          <ImageComponent src='macbook.png' className="absolute mt-8 md:ml-24 md:mt-44 md:w-96" />
           <ImageComponent src='background.png'/>
         </div>
       </div>
