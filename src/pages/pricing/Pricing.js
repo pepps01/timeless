@@ -5,16 +5,16 @@ import ImageComponent from "../../components/ImageComponent";
 const Card = ({ title, amount, text, features, className, color }) => {
   return (
     <div className={className}>
-      <h3 className={`${color} font-bold text-xl pl-8 pt-4`}>
+      <h3 className={`${color} font-bold text-xl px-8 pt-4`}>
         {title}
       </h3>
-      <div className='flex py-4 pl-8 items-center'>
+      <div className='flex py-4 px-8 items-center'>
         <h1 className={`${color} font-bold text-3xl`}>${amount}</h1>
         <p className='text-base ml-2 font-bold'>/ Month</p>
       </div>
-      <p className={`${color} text-sm py-4 pl-8`}>{text}</p>
+      <p className={`${color} text-sm py-4 px-8`}>{text}</p>
       {features?.map((feature) => (
-        <div className='flex  py-2 pl-8'>
+        <div className='flex  py-2 px-8'>
           <ImageComponent src='check.png' />
           <p className='ml-4'>{feature}</p>
         </div>
