@@ -6,11 +6,10 @@ const Homepage = () => {
     <>
 
       {/* navbar goes here */}
-
-      <div className='homepage-content'>gnringibn </div>
+      <div className='homepage-content'>gnringibn</div>
 
       {/* footer goes here */}
-
+      {/* <Footer /> */}
     </>
   )
 }
