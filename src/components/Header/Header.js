@@ -18,7 +18,7 @@ const Header = ({ setIsOpen, isOpen }) => {
             </div>
           ))}
         </ul>
-        <div className="getStartedBtn"><a href="/register">Contact Us</a></div>
+        <div className="getStartedBtn"><a href="/contact">Contact Us</a></div>
         <div onClick={() => setIsOpen((isOpen) => !isOpen)} className="hamburger"><FaAlignRight size={20} /></div>
       </div>
     </nav>

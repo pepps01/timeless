@@ -1,16 +1,17 @@
 import React from 'react'
 import './Contact.css'
-import Bag from '../../assets/pngs/bag.png'
+import ContactIcon from '../../assets/pngs/contactIcon.png'
 
 const Contact = () => {
   return (
-    <div className="flex items-center justify-center p-9">
+    <div className="flex items-center bg-[#e7e1f2] justify-center xl:p-9 lg:p-9 sm:p-9  md:p-9 pb-[120px] pt-[19px] lg:px-[120px] sm:px-[120px] md:px-[120px] bg-gradient-to-r from-[#e7e1f2] to-[#e9eaf5]">
       
-      <div className=" w-full flex rounded-[34.33px] px-9 h-full lg:grid grid-cols-2 gap-4 pb-[30px] relative">
+      <div className=" xl:w-full lg:w-full md:w-full sm:w-full w-[90%] rounded-[34.33px] xl:px-9 lg:px-9 md:px-9 sm:px-9 h-full grid-cols-1 lg:grid lg:grid-cols-2 md:grid-cols-2   sm:grid-cols-2 gap-4 pb-[30px] relative">
         
         <div className="topImage absolute w-full opacity-5">
           <svg
-            width="1084"
+            width="100%"
+            // width="1084"
             height="850"
             viewBox="0 0 1084 850"
             fill="none"
@@ -277,7 +278,8 @@ const Contact = () => {
 
         <div className="bottomImage absolute w-full bottom-0 opacity-5">
           <svg
-            width="655"
+            width="100%"
+            // width="655"
             height="373"
             viewBox="0 0 655 373"
             fill="none"
@@ -328,10 +330,10 @@ const Contact = () => {
 
         <div className = "ContactWrapper w-full rounded-[34.33px] p-9 m-0 absolute h-full"></div>
 
-        <div className=" mt-[71px]  pl-[30.1px]">
-          <div className="">
-            <div className="rotated">
-              <img src={Bag} width={100} height={100} alt={'alt'} />
+        <div className=" mt-[71px] lg:w-[80%] xl:w-[80%] md:w-[80%] sm:w-[80%] pl-[30.1px]">
+          <div className="relative pt-6">
+            <div className="rotated absolute top-0 right-[-60px]">
+              <img src={ContactIcon} width={29} height={40} alt={'alt'} />
               <p>Contact Us</p>
             </div>
 
@@ -352,7 +354,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className=" z-20 bg-white shadow-md rounded-[34.33px] p-[50px] mr-[30px] pt-6 pb-8 mb-4 mt-[41px] lg:ml-[60px] xl:ml-[60px]">
+        <div className=" z-20 bg-white shadow-md rounded-[34.33px] pt-[51.31px] pl-[37.52px] pr-[38.52px]  pb-[25.98px] mb-4 mt-[41px] lg:ml-[60px] xl:ml-[60px]">
           <div class="">
             <form class="">
               <div class="mb-4">
@@ -363,7 +365,7 @@ const Contact = () => {
                   Full Name
                 </label>
                 <input
-                  class="shadow appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  class=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="fullname"
                   type="text"
                   placeholder="Full Name"
@@ -378,7 +380,7 @@ const Contact = () => {
                   Email
                 </label>
                 <input
-                  class="shadow appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  class=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="email"
                   type="text"
                   placeholder="Email"
@@ -387,13 +389,13 @@ const Contact = () => {
 
               <div class="mb-4">
                 <label
-                  class="block text-[#090F47] mt-[29px] text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
+                  class="block  text-[#090F47] mt-[29px] text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
                   for="username"
                 >
                   Phone Number
                 </label>
                 <input
-                  class="shadow appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  class=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="phone"
                   type="text"
                   placeholder="Phone Number"
@@ -408,7 +410,7 @@ const Contact = () => {
                   Company
                 </label>
                 <input
-                  class="shadow appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  class=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="Company"
                   type="text"
                   placeholder="Company"
@@ -417,13 +419,13 @@ const Contact = () => {
 
               <div class="mb-4">
                 <label
-                  class="block text-gray-700 mt-[29px]  text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
+                  class="block  text-gray-700 mt-[29px]  text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
                   for="Company"
                 >
                   Message
                 </label>
                 <input
-                  class="shadow appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  class=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="Company"
                   type="text"
                   placeholder="Message"
@@ -447,6 +449,7 @@ const Contact = () => {
               <div class="">
                 <div className="flex text-[#090F47] hover:text-blue-800">
                   <svg
+                    
                     width="17"
                     height="16"
                     viewBox="0 0 17 16"
