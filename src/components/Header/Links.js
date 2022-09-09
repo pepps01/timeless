@@ -19,7 +19,7 @@ export const Links = [
     },
     {
     name: "Careers",
-    path: "#"
+    path: "/careers"
     // path: "/contact"
     },
   ];

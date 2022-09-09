@@ -6,17 +6,19 @@
     ),
     url("../../assets/pngs/rectangle.png");
     mix-blend-mode:overlay;
-    opacity: 30%;
-    background-color: #4723ff;
+    opacity: 100%;
+    background-color: rgba(126, 107, 219, 0.07);;
     background-repeat: no-repeat;
     background-size: cover;
     /* fill:solid rgba(126, 107, 219, 0.07); */
     /* background: rgba(126, 107, 219, 0.20);  */
 }
 
-#input{
+.contactInput{
     background-color: #F3F3F5;
 }
+
+
 .MainWrapper{
     background: rgba(126, 107, 219, 0.07);
 }
