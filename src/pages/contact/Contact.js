@@ -6,9 +6,9 @@ const Contact = () => {
   return (
     <div className="flex items-center justify-center">
       
-      <div className=" w-full flex rounded-[34.33px]  pb-[30px] relative">
+      <div className=" w-full flex rounded-[34.33px] h-full lg:grid grid-cols-2 gap-4 pb-[30px] relative">
         
-      <div className="topImage absolute w-full opacity-5">
+        <div className="topImage absolute w-full opacity-5">
           <svg
             width="1084"
             height="850"
@@ -328,7 +328,7 @@ const Contact = () => {
 
         <div className = "ContactWrapper w-full rounded-[34.33px] p-0 m-0 absolute h-full"></div>
 
-        <div className="w-[30rem] mt-[71px]  pl-[30.1px]">
+        <div className=" mt-[71px]  pl-[30.1px]">
           <div className="">
             <div className="rotated">
               <img src={Bag} width={100} height={100} alt={'alt'} />
@@ -352,7 +352,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="w-[29rem] z-20 h-full bg-white shadow-md rounded-[34.33px] px-0 mx-0 pt-6 pb-8 mb-4 mt-[41px] lg:ml-[60px] xl:ml-[60px]">
+        <div className=" z-20 bg-white shadow-md rounded-[34.33px] px-0 mr-[30px] pt-6 pb-8 mb-4 mt-[41px] lg:ml-[60px] xl:ml-[60px]">
           <div class="">
             <form class="">
               <div class="mb-4">
