@@ -1,0 +1,46 @@
+.ContactWrapper{
+    background-image: 
+    linear-gradient(
+        rgba(48, 6, 255, 0.07), 
+        rgba(226, 14, 14, 0.07)
+    ),
+    url("../../assets/pngs/rectangle.png");
+    mix-blend-mode:overlay;
+    opacity: 30%;
+    background-color: #4723ff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* fill:solid rgba(126, 107, 219, 0.07); */
+    /* background: rgba(126, 107, 219, 0.20);  */
+}
+
+#input{
+    background-color: #F3F3F5;
+}
+.MainWrapper{
+    background: rgba(126, 107, 219, 0.07);
+}
+
+.rotated {
+    transform: rotate(15deg); 
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    /* Equal to rotateZ(45deg) */
+    background-color: #FFFFFF;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.background {
+    background:url('../../assets/pngs/rectangle.png');
+    position: relative;
+}
+
+.layer {
+    background-color: rgba(248, 247, 216, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
