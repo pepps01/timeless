@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className="flex items-center bg-[#e7e1f2] justify-center xl:p-9 lg:p-9 sm:p-9  md:p-9 pb-[120px] pt-[19px] lg:px-[120px] sm:px-[120px] md:px-[120px] bg-gradient-to-r from-[#e7e1f2] to-[#e9eaf5]">
       
-      <div className=" xl:w-full lg:w-full md:w-full sm:w-full w-[90%] rounded-[34.33px] lg:px-9 md:px-9 sm:px-9 h-full grid-cols-1 lg:grid lg:grid-cols-2 md:grid-cols-2   sm:grid-cols-2 gap-4 pb-[30px] relative">
+      <div className=" xl:w-full lg:w-full md:w-full sm:w-full w-[90%] rounded-[34.33px] xl:px-9 lg:px-9 md:px-9 sm:px-9 h-full grid-cols-1 lg:grid lg:grid-cols-2 md:grid-cols-2   sm:grid-cols-2 gap-4 pb-[30px] relative">
         
         <div className="topImage absolute w-full opacity-5">
           <svg
