@@ -330,7 +330,7 @@ const Contact = () => {
 
         <div className = "ContactWrapper w-full rounded-[34.33px] p-9 m-0 absolute h-full"></div>
 
-        <div className=" mt-[71px] lg:w-[80%] pl-[30.1px]">
+        <div className=" mt-[71px] lg:w-[80%] xl:w-[80%] md:w-[80%] sm:w-[80%] pl-[30.1px]">
           <div className="relative pt-6">
             <div className="rotated absolute top-0 right-[-60px]">
               <img src={ContactIcon} width={29} height={40} alt={'alt'} />
