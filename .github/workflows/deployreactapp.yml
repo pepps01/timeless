@@ -19,8 +19,8 @@ jobs:
         cache: 'npm'
     - run: git pull origin main
     
-    - name: Install Packages
+ #   - name: Install Packages
     -  run: npm install
     
-    - name: Build page
+#    - name: Build page
     -  run: npm run build
