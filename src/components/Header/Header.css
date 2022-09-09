@@ -9,19 +9,13 @@ Navbar Styling
   .mobileNavbar {
     display: none;
   }
+
   .navbar {
     display: flex;
   }
+
   .nav {
     display: flex;
-    /* position: fixed; */
-    /* background-color: #6B5DD3; */
-    background: linear-gradient(
-      165.92deg,
-      rgba(242, 241, 248, 0.73) 16.61%,
-      rgba(242, 241, 248, 0.75) 89.8%
-    );
-    backdrop-filter: blur(40px);
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -30,26 +24,37 @@ Navbar Styling
     padding-bottom: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    background: linear-gradient(
+      165.92deg,
+      rgba(242, 241, 248, 0.73) 16.61%,
+      rgba(242, 241, 248, 0.75) 89.8%
+    );
+    position: fixed;
   }
+
   .landingPageLogo {
     display: flex;
     align-items: center;
     padding: 10px;
   }
-  .landingPageLogo > img {
+
+  .landingPageLogo>img {
     width: 36px;
     height: 36px;
   }
-  .landingPageLogo > h2 {
+
+  .landingPageLogo>h2 {
     margin-left: 5px;
     margin-top: 10px;
     color: #090F47;
     /* color: #6b5dd3; */
     font-size: 22px;
   }
+
   .hamburger {
     display: none;
   }
+
   .navbarLinks {
     display: flex;
     list-style-type: none;
@@ -57,18 +62,22 @@ Navbar Styling
     padding-top: 0.4rem;
     margin: 0;
   }
+
   .navbarLink {
     display: flex;
   }
-  .navbarLink > li {
+
+  .navbarLink>li {
     margin-right: 0.2rem;
     cursor: pointer;
   }
+
   .navbarLink {
     padding: 10px;
     color: #8487a3;
     font-size: 1rem;
   }
+
   /* .loginBtn > a {
       padding: 0.5rem;
       text-decoration: none;
@@ -78,17 +87,19 @@ Navbar Styling
       color: #fff;
       margin: 10px;
     } */
-  .getStartedBtn > a {
+  .getStartedBtn>a {
     text-decoration: none;
     color: #fff;
-}
-.getStartedBtn {
+  }
+
+  .getStartedBtn {
     margin-left: 6rem;
     padding: 1rem;
     border: 2px solid #6b5dd3;
     border-radius: 0.5rem;
     background-color: #6b5dd3;
   }
+
   .desktopNavbarBtn {
     display: flex;
   }
@@ -101,9 +112,11 @@ Navbar Styling
     padding-right: 2rem;
     z-index: 20;
   }
+
   .hamburger {
     display: flex;
   }
+
   .mobileNavbar {
     display: block;
     position: fixed;
@@ -113,9 +126,8 @@ Navbar Styling
     border-bottom: 3px solid #fff;
     flex-direction: column;
     background-color: #6b5dd3;
-    transform: translateY(
-      -70vh
-    ); /* the element is transposed 300px to the left of where it's supposed to be */
+    transform: translateY(-70vh);
+    /* the element is transposed 300px to the left of where it's supposed to be */
     transition: transform 1s ease-out, visibility 1s;
     visibility: hidden;
     left: 0;
@@ -124,6 +136,7 @@ Navbar Styling
     padding: 2rem;
     z-index: 10;
   }
+
   .mobileNavbarShow {
     display: block;
     position: fixed;
@@ -133,9 +146,8 @@ Navbar Styling
     border-bottom: 3px solid #fff;
     flex-direction: column;
     background-color: #6b5dd3;
-    transform: translateY(
-      0
-    ); /* the element is transposed 300px to the left of where it's supposed to be */
+    transform: translateY(0);
+    /* the element is transposed 300px to the left of where it's supposed to be */
     transition: transform 1s ease-out, visibility 1s;
     visibility: visible;
     top: 6rem;
@@ -145,14 +157,17 @@ Navbar Styling
     padding: 2rem;
     z-index: 10;
   }
+
   .mobileNavbarLinks {
     list-style-type: none;
     padding-left: 0.5rem;
   }
-  .navbarLink > li {
+
+  .navbarLink>li {
     font-size: 1rem;
     color: #fff;
   }
+
   /* .loginBtn1 > a {
     padding: 0.5rem;
     text-decoration: none;
@@ -165,7 +180,8 @@ Navbar Styling
   .getStartedBtn1 {
     margin-top: 2rem;
   }
-  .getStartedBtn1 > a {
+
+  .getStartedBtn1>a {
     padding: 0.5rem;
     text-decoration: none;
     border: 2px solid #6b5dd3;
@@ -174,15 +190,19 @@ Navbar Styling
     color: #6b5dd3;
     margin: 10px;
   }
+
   .mobileNavbarBtn {
     display: flex;
   }
+
   .navbarLinks {
     display: none;
   }
+
   .loginBtn {
     display: none;
   }
+
   .getStartedBtn {
     display: none;
   }

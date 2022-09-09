@@ -9,17 +9,14 @@ export const Links = [
     },
     {
     name: "About Us",
-    path: "#"
-    // path: "/suppliers"
+    path: "/about"
     },
     {
      name: "Pricing",
-     path: "#"
-    //  path: "/about"
+     path: "/pricing"
     },
     {
     name: "Careers",
     path: "/careers"
-    // path: "/contact"
     },
   ];
