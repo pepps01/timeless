@@ -1,0 +1,14 @@
+.rotated {
+    transform: rotate(15deg); /* Equal to rotateZ(45deg) */
+    background-color: #FFFFFF;
+    border-radius: 22.65px;
+    height: 43.03px;
+    width: 140.18px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.circle{
+
+}
+
+
+  
