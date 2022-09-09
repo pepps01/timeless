@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
-import './components/Header/Header.css';
-
+import Careers from './pages/careers/Careers';
+import Contact from './pages/contact/Contact';
 import Homepage from './pages/homepage/Homepage';
+import './components/Header/Header.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import { Links } from './components/Header/Links';
@@ -32,6 +32,8 @@ function App() {
             </div>
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
       <Footer />
