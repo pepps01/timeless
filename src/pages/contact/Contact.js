@@ -4,9 +4,9 @@ import Bag from '../../assets/pngs/bag.png'
 
 const Contact = () => {
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center p-9">
       
-      <div className=" w-full flex rounded-[34.33px] h-full lg:grid grid-cols-2 gap-4 pb-[30px] relative">
+      <div className=" w-full flex rounded-[34.33px] px-9 h-full lg:grid grid-cols-2 gap-4 pb-[30px] relative">
         
         <div className="topImage absolute w-full opacity-5">
           <svg
@@ -326,7 +326,7 @@ const Contact = () => {
           </svg>
         </div>
 
-        <div className = "ContactWrapper w-full rounded-[34.33px] p-0 m-0 absolute h-full"></div>
+        <div className = "ContactWrapper w-full rounded-[34.33px] p-9 m-0 absolute h-full"></div>
 
         <div className=" mt-[71px]  pl-[30.1px]">
           <div className="">
@@ -352,7 +352,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className=" z-20 bg-white shadow-md rounded-[34.33px] px-0 mr-[30px] pt-6 pb-8 mb-4 mt-[41px] lg:ml-[60px] xl:ml-[60px]">
+        <div className=" z-20 bg-white shadow-md rounded-[34.33px] p-[50px] mr-[30px] pt-6 pb-8 mb-4 mt-[41px] lg:ml-[60px] xl:ml-[60px]">
           <div class="">
             <form class="">
               <div class="mb-4">
