@@ -15,11 +15,6 @@ const Header = ({ setIsOpen, isOpen }) => {
           {Links.map((link, index) => (
             <div key={index} className="navbarLink">
               <li>{link.name}</li>
-              <span>
-                {link.subLinks && (
-                  <img src='/images/down.png' alt='down arrarow' />
-                )}
-              </span>
             </div>
           ))}
         </ul>
