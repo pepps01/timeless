@@ -104,10 +104,10 @@ const Footer = () => {
         </div>
         <div className='topFooter2'>
           <h6>Our Office</h6>
-          <p className='topFooter3p'>
+          {/* <p className='topFooter3p'>
             United Kingdom Dept 1973, 196 Highroad, Wood Green, London. N22 8HH
             United Kingdom.
-          </p>
+          </p> */}
           <p className='topFooter3p'>Nigeria</p>
           <p className='topFooter3p'>12e Admiralty way. Lekki Phase 1 Lagos</p>
         </div>
