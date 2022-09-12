@@ -7,7 +7,6 @@ import Contact from './pages/contact/Contact';
 import Homepage from './pages/homepage/Homepage';
 import Products from './pages/products/Products';
 import Pricing from './pages/pricing/Pricing';
-import './components/Header/Header.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import { Links } from './components/Header/Links';
@@ -23,15 +22,15 @@ function App() {
         >
           <ul className="mobileNavbarLinks">
             {Links.map((link, index) => (
-              <div key={index} className="navbarLink">
+              <div key={index} className="mnavbarLink">
                 <Link to={link.path}>
-                  <li>{link.name}</li>
+                  <li className="mlink">{link.name}</li>
                 </Link>
               </div>
             ))}
           </ul>
           <div className="mobileNavbarBtn">
-            <div className="getStartedBtn1">
+            <div className="getStartedBtn2">
               <a href='/contact'>Contact Us</a>
             </div>
           </div>

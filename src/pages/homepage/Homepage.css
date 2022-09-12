@@ -46,7 +46,11 @@
     line-height: 60px;
     color: #090F47;
 }
-
+.head-content > h3 > span {
+    background-image: linear-gradient(0.82deg, rgba(107, 93, 211, 1), rgba(107, 93, 211, 0));
+    background-clip: text;
+    color: transparent;
+}
 .head-content p {
     font-style: normal;
     font-weight: 400;
@@ -310,6 +314,11 @@ p {
         flex-direction: column;
         margin-bottom: 5rem;
     }
+    .head-content > h3 {
+        text-align: left;
+        font-size: 26px;
+        line-height: 35px;
+    }
 
     .home-image {
         display: none;
@@ -325,13 +334,17 @@ p {
 
     .head-content p {
         width: 100%;
+        text-align: left;
+        padding-top: 2rem;
     }
 
     .action-buttons {
-        justify-content: space-around;
+        justify-content: start;
         width: 100%;
     }
-
+    .learn-more {
+        margin-left: 2rem;
+    }
     .our-patners {
         display: none;
     }
@@ -367,7 +380,14 @@ p {
         width: 100%;
         text-align: center;
     }
-
+    .customers-right h3 {
+        text-align: left;
+        margin-left: 0;
+    }
+    .customers-right p {
+        text-align: left;
+        margin-left: 0;
+    }
     .customer-item {
         width: 100%;
         margin-bottom: 1rem;

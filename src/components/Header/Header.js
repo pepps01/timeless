@@ -5,7 +5,7 @@ import { Links } from "./Links";
 import { Link, useLocation } from "react-router-dom";
 
 const Header = ({ setIsOpen, isOpen }) => {
-  const pathname = useLocation().pathname
+  const pathname = useLocation().pathname;
   return (
     <nav className='nav'>
       <div className='landingPageLogo'>
@@ -65,7 +65,9 @@ const Header = ({ setIsOpen, isOpen }) => {
           {Links.map((link, index) => (
             <div key={index} className='navbarLink'>
               <Link to={link.path}>
-                <li className={pathname === link.path ? "active" : "inactive"}>{link.name}</li>
+                <li className={pathname === link.path ? "active" : "inactive"}>
+                  {link.name}
+                </li>
               </Link>
             </div>
           ))}
@@ -77,7 +79,29 @@ const Header = ({ setIsOpen, isOpen }) => {
           onClick={() => setIsOpen((isOpen) => !isOpen)}
           className='hamburger'
         >
-          <FaAlignRight size={20} />
+          <svg
+            width='60'
+            height='60'
+            viewBox='0 0 60 60'
+            fill='none'
+            xmlns='http://www.w3.org/2000/svg'
+          >
+            <rect
+              opacity='0.5'
+              x='0.5'
+              y='0.5'
+              width='59'
+              height='59'
+              rx='13.5'
+              stroke='#090F47'
+            />
+            <path
+              fill-rule='evenodd'
+              clip-rule='evenodd'
+              d='M21.25 30C21.25 29.5858 21.5858 29.25 22 29.25L37.9996 29.25C38.4138 29.25 38.7496 29.5858 38.7496 30C38.7496 30.4142 38.4138 30.75 37.9996 30.75H22C21.5858 30.75 21.25 30.4142 21.25 30ZM24.5331 37C24.5331 36.5858 24.8689 36.25 25.2831 36.25L38 36.25C38.4142 36.25 38.75 36.5858 38.75 37C38.75 37.4142 38.4142 37.75 38 37.75L25.2831 37.75C24.8689 37.75 24.5331 37.4142 24.5331 37ZM30.2219 23C30.2219 22.5858 30.5577 22.25 30.9719 22.25L38 22.25C38.4142 22.25 38.75 22.5858 38.75 23C38.75 23.4142 38.4142 23.75 38 23.75L30.9719 23.75C30.5577 23.75 30.2219 23.4142 30.2219 23Z'
+              fill='#090F47'
+            />
+          </svg>
         </div>
       </div>
     </nav>

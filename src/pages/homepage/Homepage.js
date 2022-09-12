@@ -21,8 +21,7 @@ const Homepage = () => {
           <div className='homepage-right' data-aos="fade-left">
             <div className='head-content'>
               <h3>
-                Empathetic and convenient
-                healthcare for you and your loved ones.
+                Empathetic and convenient <span>healthcare</span> for you and your loved ones.
               </h3>
               <p>
                 At Afrihealth we aim to increase the quality of life regardless of location or socially determined barriers. While delivering better results, we ensure cost is never a basis to be denied premium healthcare
