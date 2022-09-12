@@ -1,8 +1,8 @@
 name: React App Deployment
-#on:
- # push:
-  #  branches:
-    #  - main
+on:
+  push:
+    branches:
+      - main
     
 jobs:
   deploy:
@@ -16,7 +16,14 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Install Packages
-      run: npm install
-    - name: Build page
-      run: npm run build
+        cache: 'npm'
+#    - run: git pull origin main
+    - run: npm cache clean --force
+    
+    - run: rm -rf node_modules
+    
+ #   - name: Install Packages
+    -  run: npm install
+    
+#    - name: Build page
+    -  run: npm build
