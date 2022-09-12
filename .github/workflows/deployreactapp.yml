@@ -27,3 +27,11 @@ jobs:
     
 #    - name: Build page
     -  run: npm build
+    
+    -  run: cd /home/ubuntu/afrihealth-website/_work/afrihealth_desktop/afrihealth_desktop
+    
+    -  run: pm2 status && pm2 stop afrihealth-website &&  pm2 delete afrihealth-website
+    
+    -  run: pm2 start yarn --interpreter bash --name afrihealth-website -- start
+    
+    -  run: pm2 status
