@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import About from './pages/about/About';
 import Careers from './pages/careers/Careers';
 import Contact from './pages/contact/Contact';
@@ -9,32 +9,20 @@ import Products from './pages/products/Products';
 import Pricing from './pages/pricing/Pricing';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import { Links } from './components/Header/Links';
+// import { Links } from './components/Header/Links';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    Aos.init({ duration: 700 });
+  }, []);
   return (
     <>
       <Router className="App">
         <Header setIsOpen={setIsOpen} isOpen={isOpen} />
-        <div
-          className={isOpen ? "mobileNavbarShow" : "mobileNavbar"}
-        >
-          <ul className="mobileNavbarLinks">
-            {Links.map((link, index) => (
-              <div key={index} className="mnavbarLink">
-                <Link to={link.path}>
-                  <li className="mlink">{link.name}</li>
-                </Link>
-              </div>
-            ))}
-          </ul>
-          <div className="mobileNavbarBtn">
-            <div className="getStartedBtn2">
-              <a href='/contact'>Contact Us</a>
-            </div>
-          </div>
-        </div>
         <div className="global">
           <Routes>
             <Route path="/" element={<Homepage />} />
