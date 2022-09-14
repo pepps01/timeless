@@ -4,11 +4,11 @@ import ContactIcon from '../../assets/pngs/contactIcon.png'
 
 const Contact = () => {
   return (
-    <div className="flex items-center bg-[#e7e1f2] justify-center xl:p-9 lg:p-9 sm:p-9  md:p-9 pb-[120px] pt-[19px] lg:px-[120px] sm:px-[120px] md:px-[120px] bg-gradient-to-r from-[#e7e1f2] to-[#e9eaf5]">
-      
-      <div className=" xl:w-full lg:w-full md:w-full sm:w-full w-[90%] rounded-[34.33px] xl:px-9 lg:px-9 md:px-9 sm:px-9 h-full grid-cols-1 lg:grid lg:grid-cols-2 md:grid-cols-2   sm:grid-cols-2 gap-4 pb-[30px] relative">
+    <div className="flex items-center bg-[#e7e1f2]  justify-center xl:px-9 lg:px-9 sm:p-9  md:p-9 md:pb-[120px] lg:pb-[120px] xl:pb-[120px] pb-[120px] pt-[19px]  sm:px-[120px] md:px-[120px] bg-gradient-to-r from-[#e7e1f2] to-[#e9eaf5]">
+      {/* xl:w-[90%] lg:w-[95%] md:w-[90%] sm:w-[90%] w-[90%] */}
+      <div className=" w-[90%] flex flex-col items-center md:items-stretch justify-center rounded-[34.33px] xl:px-9 lg:px-9 md:px-9 sm:px-9 h-full grid-cols-1 lg:grid lg:grid-cols-2 md:grid-cols-2   sm:grid-cols-2 gap-4 pb-[120px] relative">
         
-        <div className="topImage absolute w-full opacity-5">
+        <div className="topImage top-0  absolute w-full opacity-[0.03]">
           <svg
             width="100%"
             // width="1084"
@@ -276,7 +276,7 @@ const Contact = () => {
           </svg>
         </div>
 
-        <div className="bottomImage absolute w-full bottom-0 opacity-5">
+        <div className="bottomImage absolute w-[full] bottom-0 opacity-[0.03]">
           <svg
             width="100%"
             // width="655"
@@ -328,9 +328,9 @@ const Contact = () => {
           </svg>
         </div>
 
-        <div className = "ContactWrapper w-full rounded-[34.33px] p-9 m-0 absolute h-full"></div>
+        <div className = "ContactWrapper w-[100%] rounded-[34.33px] xl:px-9 lg:px-9 md:px-9 sm:px-9 h-full pb-[120px] absolute"></div>
 
-        <div className=" mt-[71px] lg:w-[80%] xl:w-[80%] md:w-[80%] sm:w-[80%] pl-[30.1px]">
+        <div className=" mt-[110.03px] lg:w-[80%] xl:w-[80%] md:w-[80%] sm:w-[80%] pl-[30.1px]">
           <div className="relative pt-6">
             <div className="rotated absolute top-0 right-[-60px]">
               <img src={ContactIcon} width={29} height={40} alt={'alt'} />
@@ -354,99 +354,99 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className=" z-20 bg-white shadow-md rounded-[34.33px] pt-[51.31px] pl-[37.52px] pr-[38.52px]  pb-[25.98px] mb-4 mt-[41px] lg:ml-[60px] xl:ml-[60px]">
-          <div className="">
-            <form className="">
-              <div className="mb-4">
+        <div className=" lg:z-20 xl:z-20 z-0 bg-white shadow-md w-[80%] rounded-[34.33px] pt-[51.31px] pl-[37.52px] pr-[38.52px]  pb-[25.98px] mb-4 mt-[41px] lg:ml-[60px] xl:ml-[60px]">
+          <div class="">
+            <form class="">
+              <div class="mb-4">
                 <label
-                  className="block text-gray-700 text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
-                  htmlFor="username"
+                  class="block text-gray-700 text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
+                  for="username"
                 >
                   Full Name
                 </label>
                 <input
-                  className=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  class=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="fullname"
                   type="text"
                   placeholder="Full Name"
                 />
               </div>
 
-              <div className="mb-4">
+              <div class="mb-4">
                 <label
-                  className="block text-gray-700 mt-[29px] text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
-                  htmlFor="username"
+                  class="block text-gray-700 mt-[29px] text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
+                  for="username"
                 >
                   Email
                 </label>
                 <input
-                  className=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  class=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="email"
                   type="text"
                   placeholder="Email"
                 />
               </div>
 
-              <div className="mb-4">
+              <div class="mb-4">
                 <label
-                  className="block  text-[#090F47] mt-[29px] text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
-                  htmlFor="username"
+                  class="block  text-[#090F47] mt-[29px] text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
+                  for="username"
                 >
                   Phone Number
                 </label>
                 <input
-                  className=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  class=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="phone"
                   type="text"
                   placeholder="Phone Number"
                 />
               </div>
 
-              <div className="mb-4">
+              <div class="mb-4">
                 <label
-                  className="block text-gray-700 mt-[29px] text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
-                  htmlFor="Company"
+                  class="block text-gray-700 mt-[29px] text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
+                  for="Company"
                 >
                   Company
                 </label>
                 <input
-                  className=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  class=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="Company"
                   type="text"
                   placeholder="Company"
                 />
               </div>
 
-              <div className="mb-4">
+              <div class="mb-4">
                 <label
-                  className="block  text-gray-700 mt-[29px]  text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
-                  htmlFor="Company"
+                  class="block  text-gray-700 mt-[29px]  text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
+                  for="Company"
                 >
                   Message
                 </label>
                 <input
-                  className=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  class=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="Company"
                   type="text"
                   placeholder="Message"
                 />
               </div>
 
-              <div className="mb-4">
+              <div class="mb-4">
                 <label
-                  htmlFor="message"
-                  className="block mb-2 mx-0 text-sm font-medium text-gray-900 dark:text-gray-400"
+                  for="message"
+                  class="block mb-2 mx-0 text-sm font-medium text-gray-900 dark:text-gray-400"
                 >
                   Message
                 </label>
                 <textarea
                   id="message"
                   rows="3"
-                  className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Add Message"
                 ></textarea>
               </div>
-              <div className="">
+              <div class="">
                 <div className="flex text-[#090F47] hover:text-blue-800">
                   <svg
                     
@@ -463,7 +463,7 @@ const Contact = () => {
                   </svg>
 
                   <a
-                    className="inline-block font-bold text-sm "
+                    class="inline-block font-bold text-sm "
                     href="#"
                   >
                     Add Attachement
@@ -471,7 +471,7 @@ const Contact = () => {
                 </div>
                 <div className = "flex justify-end ">
                   <button
-                    className="bg-[#6B5DD3] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    class="bg-[#6B5DD3] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                     type="button"
                   >
                     Submit
