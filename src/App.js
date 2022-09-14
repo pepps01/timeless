@@ -10,6 +10,7 @@ import Pricing from './pages/pricing/Pricing';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import { Links } from './components/Header/Links';
+import CareerDetails from './pages/careers/CareerDetails';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,6 +44,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/careerdetails" element={<CareerDetails />} />
           </Routes>
         </div>
       </Router>

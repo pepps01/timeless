@@ -1,7 +1,12 @@
 import React from 'react'
 import './Careers.css'
 import Bag from '../../assets/pngs/circleWork.png'
+import circledRightArrow from '../../assets/svg/circledRightArrowIcon.svg'
+import {useNavigate } from "react-router";
+
 const Careers = () => {
+  const navigate = useNavigate();
+
   const careers = [
     {
       col1: { title: 'Backend Engineer', value: 'Technology & Innovation' },
@@ -29,13 +34,12 @@ const Careers = () => {
     },
   ]
 
+  const gotoMore = ()=>{
+    navigate("/careerdetails")
+  }
+
   return (
     <div>
-      {/* <div class="rotated">
-        <div className="circle rounded-lg bg-[#49496c]" style = {{backgroundColor:"green",borderRadius:20,height:28.69,width:28.69}}>
-          <img src = {bagIcon} alt = ""/>
-        </div>
-      </div> */}
       <div className="flex justify-center w-full pb-[153px] flex-col bg-gradient-to-r from-[#e7e1f2] to-[#e9eaf5]">
         <div className="flex justify-center flex-col pt-4 items-center mt-[72px] relative">
           <div className="rotated absolute top-0 right-[37%]">
@@ -53,37 +57,53 @@ const Careers = () => {
         <div className="flex justify-center mt-[62px] flex-col items-center ">
           {careers?.map((data, index) => (
             <div
-              className="flex justify-around h-auto flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-col items-center mt-[26px] bg-[#FFFFFF] w-[80%] xl:h-[115px] lg:h-[115px] md:h-[115px] sm:h-[115px] rounded-[17.81px]"
+              className="grid grid-cols-2 py-5 mx-auto px-5 lg:flex xl:flex md:flex justify-around h-auto  xl:flex-row lg:flex-row md:flex-col sm:flex-col items-center mt-[26px] bg-[#FFFFFF] w-[80%] xl:h-[115px] lg:h-[115px] md:h-[115px] sm:h-[115px] rounded-[17.81px]"
               key={index}
+              onClick = {gotoMore}
             >
-              <div>
-                <p className="font-semibold text-[1.125rem] leading-[22.86px] text-[#090F47]">
+              <div className = "">
+                <p className="font-semibold text-[0.875rem] xl:text-[1.125rem] lg:text-[1.125rem] md:text-[1.125rem] sm:text-[1.125rem] leading-[22.86px] text-[#090F47]">
                   {data?.col1.title}
                 </p>
-                <p className="text-[0.875rem] leading-[22.86px] text-[#090F47]">
+                <p className="text-[0.625rem] xl:text-[0.875rem] lg:text-[0.875rem] md:text-[0.875rem] sm:text-[0.875rem] leading-[22.86px] text-[#090F47]">
                   {data?.col1.value}
                 </p>
               </div>
-              <div>
-                <p className="font-semibold text-[1.125rem] leading-[22.86px] text-[#090F47]">
+
+              <div className = " ml-20">
+                <p className="font-semibold text-[0.875rem] xl:text-[1.125rem] lg:text-[1.125rem] md:text-[1.125rem] sm:text-[1.125rem] leading-[22.86px] text-[#090F47]">
                   {data?.col2.title}
                 </p>
-                <p className="text-[0.875rem] leading-[22.86px] text-[#090F47]">
+                <p className="text-[0.625rem] xl:text-[0.875rem] lg:text-[0.875rem] md:text-[0.875rem] sm:text-[0.875rem] leading-[22.86px] text-[#090F47]">
                   {data?.col2.value}
                 </p>
               </div>
-              <div>
+
+              <div className = "hidden xl:block lg:block md:block sm:block ">
                 <p className="font-semibold text-[1.125rem] leading-[22.86px] text-[#6B5DD3]">
                   {data?.col3.title}
                 </p>
               </div>
-              <div>
-                <p className="font-semibold text-[1.125rem] leading-[22.86px] text-[#090F47]">
+
+
+              <div className="">
+                <p className="font-semibold text-[0.875rem] xl:text-[1.125rem] lg:text-[1.125rem] md:text-[1.125rem] sm:text-[1.125rem] leading-[22.86px] text-[#090F47]">
                   {data?.col4.title}
                 </p>
-                <p className="text-[0.875rem] leading-[22.86px] text-[#090F47]">
+                <p className="text-[0.625rem] xl:text-[0.875rem] lg:text-[0.875rem] md:text-[0.875rem] sm:text-[0.875rem] leading-[22.86px] text-[#090F47]">
                   {data?.col4.value}
                 </p>
+              </div>
+
+
+              <div className = "block xl:hidden lg:hidden md:hidden sm:hidden ml-20">
+                <p className="font-semibold text-[0.875rem] leading-[17.88px] text-[#6B5DD3]">
+                  {data?.col3.title}
+                </p>
+              </div>
+
+              <div className=" hidden xl:block lg:block md:block sm:block cursor-pointer">
+                <img src={circledRightArrow} alt="view" />
               </div>
             </div>
           ))}
