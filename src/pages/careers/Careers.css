@@ -16,4 +16,12 @@
 }
 
 
-  
+.noCareerContainer{
+
+    background: linear-gradient(180deg, #EBE6F3 0%, #D6CFF2 100%);
+}
+
+.applyShadow{
+    box-shadow: 0px 10px 8px -14px rgba(0,0,0,0.1);
+
+}
