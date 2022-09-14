@@ -2,24 +2,24 @@ import React from "react";
 import "./Pricing.css";
 import ImageComponent from "../../components/ImageComponent";
 
-const Card = ({ title, amount, text, features, className, color }) => {
+const Card = ({ title, amount, text, features, className, color,buttonClass }) => {
   return (
     <div className={className}>
-      <h3 className={`${color} font-bold text-xl px-8 pt-4`}>
+      <h3 className={`${color} font-bold text-xl px-8 pt-[35.1px]`}>
         {title}
       </h3>
-      <div className='flex py-4 px-8 items-center'>
-        <h1 className={`${color} font-bold text-3xl`}>${amount}</h1>
-        <p className='text-base ml-2 font-bold'>/ Month</p>
+      <div className='flex  px-8 items-center mt-[27.17px]'>
+        <h1 className={`${color} text-[2.28rem] font-bold text-3xl `}>${amount}</h1>
+        <p className='text-base text-[1.125rem]  ml-2 font-bold'>/ Month</p>
       </div>
-      <p className={`${color} text-sm py-4 px-8`}>{text}</p>
+      <p className={`${color} text-sm mt-[39.72px] mb-[33.57px] px-8`}>{text}</p>
       {features?.map((feature) => (
         <div className='flex  py-2 px-8'>
           <ImageComponent src='check.png' />
           <p className='ml-4'>{feature}</p>
         </div>
       ))}
-      <button className='mt-8 p-4 w-full bg-afriSubHeader rounded-lg'>
+      <button className={buttonClass}>
         Choose Plan
       </button>
     </div>
@@ -45,31 +45,36 @@ const Pricing = () => {
         </p>
       </div>
 
-      <div className='flex flex-wrap relative justify-center items-center'>
-        <ImageComponent src="Pills.png" className="absolute top-0 z-20" />
+      <div className='flex flex-wrap justify-center items-center'>
         <Card
-          className='bg-white z-5 p-4 text-white rounded-2xl w-72 lg:mb-2 lg:-rotate-[10deg]  m-4'
+          className='bg-white z-5 p-4 text-white rounded-2xl md:h-[33.125rem] mb-28 w-80 lg:mb-2 lg:-rotate-[10deg]  m-4'
           title='Classic Afrihealth'
           amount='29'
           features={classicFeatures}
           color="text-PrimaryTextColor"
           text='Choose a prefered health price plan that works best for you and yours.'
+          buttonClass = {"p-4 w-full bg-afriSubHeader rounded-lg"}
         />
+        <div className="relative"> 
+          <ImageComponent src="Pills.png" className="absolute right-10 top-0 z-20" />
+          <Card
+            className='bg-PrimaryTextColor md:h-[36.625rem] z-10 p-4 text-white rounded-2xl md:w-[21.75rem] w-80  m-4'
+            title='Classic Afrihealth'
+            amount='29'
+            features={classicFeatures}
+            color="text-white"
+            text='Choose a prefered health price plan that works best for you and yours.'
+            buttonClass = {"p-4 mt-[51.71px] w-full bg-afriSubHeader rounded-lg"}
+          />
+        </div>
         <Card
-          className='bg-PrimaryTextColor z-10 p-4 text-white rounded-2xl w-72  m-4'
-          title='Classic Afrihealth'
-          amount='29'
-          features={classicFeatures}
-          color="text-white"
-          text='Choose a prefered health price plan that works best for you and yours.'
-        />
-        <Card
-          className='bg-white z-10 p-4 text-white rounded-2xl w-72 lg:rotate-12 h-max m-4'
+          className='bg-white z-10 p-4 text-white rounded-2xl w-80 lg:rotate-12 h-max m-4'
           title='Classic Afrihealth'
           amount='29'
           features={classicFeatures}
           color="text-PrimaryTextColor"
           text='Choose a prefered health price plan that works best for you and yours.'
+          buttonClass = "p-4  w-full bg-afriSubHeader rounded-lg"
         />
       </div>
     </div>

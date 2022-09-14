@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className="flex items-center bg-[#e7e1f2]  justify-center xl:px-9 lg:px-9 sm:p-9  md:p-9 md:pb-[120px] lg:pb-[120px] xl:pb-[120px] pb-[120px] pt-[19px]  sm:px-[120px] md:px-[120px] bg-gradient-to-r from-[#e7e1f2] to-[#e9eaf5]">
       {/* xl:w-[90%] lg:w-[95%] md:w-[90%] sm:w-[90%] w-[90%] */}
-      <div className=" w-[90%] flex flex-col items-center justify-center rounded-[34.33px] xl:px-9 lg:px-9 md:px-9 sm:px-9 h-full grid-cols-1 lg:grid lg:grid-cols-2 md:grid-cols-2   sm:grid-cols-2 gap-4 pb-[120px] relative">
+      <div className=" w-[90%] flex flex-col items-center md:items-stretch justify-center rounded-[34.33px] xl:px-9 lg:px-9 md:px-9 sm:px-9 h-full grid-cols-1 lg:grid lg:grid-cols-2 md:grid-cols-2   sm:grid-cols-2 gap-4 pb-[120px] relative">
         
         <div className="topImage top-0  absolute w-full opacity-[0.03]">
           <svg
@@ -330,7 +330,7 @@ const Contact = () => {
 
         <div className = "ContactWrapper w-[100%] rounded-[34.33px] xl:px-9 lg:px-9 md:px-9 sm:px-9 h-full pb-[120px] absolute"></div>
 
-        <div className=" mt-[71px] lg:w-[80%] xl:w-[80%] md:w-[80%] sm:w-[80%] pl-[30.1px]">
+        <div className=" mt-[110.03px] lg:w-[80%] xl:w-[80%] md:w-[80%] sm:w-[80%] pl-[30.1px]">
           <div className="relative pt-6">
             <div className="rotated absolute top-0 right-[-60px]">
               <img src={ContactIcon} width={29} height={40} alt={'alt'} />
