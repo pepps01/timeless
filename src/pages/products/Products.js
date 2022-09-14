@@ -5,8 +5,8 @@ import ImageComponent from "../../components/ImageComponent";
 const Products = () => {
   return (
     <div className='px-8 md:px-16'>
-      <div className='flex flex-col py-12 md:py-28'>
-        <h2 className='text-4xl font-bold text-PrimaryTextColor text-center'>
+      <div className='flex flex-col py-24 md:py-28'>
+        <h2 className='text-3xl md:text-4xl font-bold text-PrimaryTextColor text-center'>
           Our Products
         </h2>
         <p className='text-center px-0 pt-4 md:px-14 md:py-4'>
@@ -16,9 +16,9 @@ const Products = () => {
           work in perfect sync for you.
         </p>
       </div>
-      <div className='flex py-16 flex-col-reverse md:flex-row'>
+      <div className='flex py-16 flex-col md:flex-row'>
         <div className='md:w-1/2'>
-          <h6 className='text-afriSubHeader'>MOBILE APP</h6>
+          <h6 className='text-afriSubHeader text-xs'>MOBILE APP</h6>
           <h3 className='font-bold text-3xl text-PrimaryTextColor py-4'>
             Rigour Plus
           </h3>
@@ -48,42 +48,42 @@ const Products = () => {
               <div className='flex flex-col'>
                 <div className='flex items-center py-1'>
                   <ImageComponent src='check.png' />
-                  <p className='ml-2'>Purchase Medication</p>
+                  <p className='ml-2 text-sm'>Purchase Medication</p>
                 </div>
                 <div className='flex items-center py-1'>
                   <ImageComponent src='check.png' />
-                  <p className='ml-2'>Book Appointments</p>
+                  <p className='ml-2 text-sm'>Book Appointments</p>
                 </div>
                 <div className='flex items-center py-1'>
                   <ImageComponent src='check.png' />
-                  <p className='ml-2'>Check nearby medical facilities</p>
+                  <p className='ml-2 text-sm'>Check nearby medical facilities</p>
                 </div>
               </div>
               <div className='flex flex-col'>
                 <div className='flex items-center py-1'>
                   <ImageComponent src='check.png' />
-                  <p className='ml-2'>Book Ambulance</p>
+                  <p className='ml-2 text-sm'>Book Ambulance</p>
                 </div>
                 <div className='flex items-center py-1'>
                   <ImageComponent src='check.png' />
-                  <p className='ml-2'>Purchase Health Insurance</p>
+                  <p className='ml-2 text-sm'>Purchase Health Insurance</p>
                 </div>
               </div>
             </div>
 
-            <div className="md:flex py-8">
-              <div className="flex py-2 px-4 md:mb-0 mb-4 bg-PrimaryTextColor items-center rounded-lg">
+            <div className="sm:flex py-8">
+              <div className="flex py-2 px-4 mb-2 sm:mb-0 bg-PrimaryTextColor items-center rounded-lg">
                 <ImageComponent src='android.png' />
                 <div className="pl-4">
-                  <h6 className="text-white text-sm">GET IT ON</h6>
-                  <p className="text-white text-sm">Google Play</p>
+                  <h6 className="text-white md:text-sm text-xs">GET IT ON</h6>
+                  <p className="text-white md:text-sm text-xs">Google Play</p>
                 </div>
               </div>
-              <div className="flex py-2 px-4 bg-PrimaryTextColor items-center md:ml-8 rounded-lg">
+              <div className="flex py-2 px-4 bg-PrimaryTextColor items-center sm:ml-8 rounded-lg">
                 <ImageComponent src='apple.png' />
                 <div className="pl-4">
-                  <h6 className="text-white text-sm">Download On The</h6>
-                  <p className="text-white text-sm">App Store</p>
+                  <h6 className="text-white md:text-sm text-xs">Download On The</h6>
+                  <p className="text-white md:text-sm text-xs">App Store</p>
                 </div>
               </div>
             </div>
@@ -95,13 +95,13 @@ const Products = () => {
         </div>
       </div>
 
-      <div className='md:flex py-16'>
+      <div className='flex flex-col-reverse md:flex-row py-16 '>
         <div className='md:w-1/2'>
           <ImageComponent src='img2.2.png' />
         </div>
 
         <div className='md:w-1/2'>
-          <h6 className='text-afriSubHeader'>WEB APP</h6>
+          <h6 className='text-afriSubHeader text-xs'>WEB APP</h6>
           <h3 className='font-bold text-3xl text-PrimaryTextColor py-4'>Picon</h3>
           <p className='text-SecondaryTextColor py-2'>
             Our service provider platform enables through our polaris platform,
@@ -120,8 +120,8 @@ const Products = () => {
             clientele by practising beyond borders, leaping over administrative
             hurdles while improving your operational competence. <br />
           </p>
-          <div className="flex">
-            <a href='#' className='text-afriSubHeader'>Learn more</a>
+          <div className="flex mt-4">
+            <a href='#' className='text-afriSubHeader mr-2'>Learn more</a>
             <ImageComponent src='arrow-up.png' />
           </div>
         </div>
@@ -129,7 +129,7 @@ const Products = () => {
 
       <div className='md:flex py-16'>
         <div className='md:w-1/2'>
-          <h6 className='text-afriSubHeader'>WEB APP</h6>
+          <h6 className='text-afriSubHeader text-xs'>WEB APP</h6>
           <h3 className='font-bold text-3xl text-PrimaryTextColor py-4'>Polaris</h3>
           <p className='text-SecondaryTextColor py-2'>
             Our service provider platform enables we believe in re-enforcing
@@ -150,15 +150,14 @@ const Products = () => {
             international standards right from the production line to the
             retailing of drugs.
           </p>
-          <div className='flex'>
-            <a href='#' className='text-afriSubHeader'>Learn more</a>
+          <div className='flex mt-4'>
+            <a href='#' className='text-afriSubHeader mr-2'>Learn more</a>
             <ImageComponent src='arrow-up.png' />
           </div>
         </div>
 
-        <div className='md:w-1/2 relative'>
-          <ImageComponent src='macbook.png' className="absolute mt-8 md:ml-24 md:mt-44 md:w-96" />
-          <ImageComponent src='background.png'/>
+        <div className='md:w-1/2'>
+          <ImageComponent src='macbook.png' />
         </div>
       </div>
     </div>

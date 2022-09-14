@@ -94,11 +94,18 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .bottomFooter {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     padding: 2rem;
   }
   .africontainer {
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+  .topFooter1 {
+    padding-left: 0;
+  }
+  .topFooter2 {
     padding-left: 0;
   }
 }

@@ -26,7 +26,7 @@
     border-top: 3px solid #fff;
     border-bottom: 3px solid #fff;
     flex-direction: column;
-    background-color: #6b5dd3;
+    background: linear-gradient(165.92deg, rgba(241, 236, 245, 0.64) 16.61%, rgba(241, 239, 246, 0.65) 89.8%);
     transform: translateY(-70vh);
     /* the element is transposed 300px to the left of where it's supposed to be */
     transition: transform 1s ease-out, visibility 1s;
@@ -46,7 +46,7 @@
     border-top: 3px solid #fff;
     border-bottom: 3px solid #fff;
     flex-direction: column;
-    background-color: #6b5dd3;
+    background: linear-gradient(165.92deg, rgba(241, 236, 245, 0.64) 16.61%, rgba(241, 239, 246, 0.65) 89.8%);
     transform: translateY(0);
     /* the element is transposed 300px to the left of where it's supposed to be */
     transition: transform 1s ease-out, visibility 1s;
@@ -65,26 +65,32 @@
   }
 
   .mnavbarLink {
-    color: #fff;
+    color: rgba(132, 135, 163, 1);
+    font-weight: bold;
   }
-  .mlink {
+  .inactive {
     font-size: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  
+  .active {
+    color: #090F47;
+    font-weight: bold;
+  }
   .getStartedBtn2 {
-    margin-top: 1rem;
+    text-decoration: none;
+    color: #fff;
   }
 
-  .getStartedBtn2 > a {
+  .getStartedBtn2 {
     padding: 1rem;
     text-decoration: none;
     font-size: bold;
     border: 2px solid #6b5dd3;
     border-radius: 0.5rem;
-    background-color: #fff;
-    color: #6b5dd3;
+    background-color: #6b5dd3;
+    color: #fff;
+    margin-left: 0;
     margin: 10px;
   }
 

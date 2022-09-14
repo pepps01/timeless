@@ -66,9 +66,15 @@ const Footer = () => {
             comfort of a smartphone.
           </p>
           <div className='social'>
-            <ImageComponent src='Facebook.png' className='socialimg' />
-            <ImageComponent src='Instagram.png' className='socialimg' />
-            <ImageComponent src='Twitter.png' className='socialimg' />
+            <a href="https://linkedin.com/company/afrihealth-ltd">
+              <ImageComponent src='Facebook.png' className='socialimg' />
+            </a>
+            <a href="https://linkedin.com/company/afrihealth-ltd">
+              <ImageComponent src='Instagram.png' className='socialimg' />
+            </a>
+            <a href="https://linkedin.com/company/afrihealth-ltd">
+              <ImageComponent src='Twitter.png' className='socialimg' />
+            </a>
           </div>
         </div>
         <div className='topFooter2'>
@@ -104,17 +110,17 @@ const Footer = () => {
         </div>
         <div className='topFooter2'>
           <h6>Our Office</h6>
-          <p className='topFooter3p'>
+          {/* <p className='topFooter3p'>
             United Kingdom Dept 1973, 196 Highroad, Wood Green, London. N22 8HH
             United Kingdom.
-          </p>
+          </p> */}
           <p className='topFooter3p'>Nigeria</p>
           <p className='topFooter3p'>12e Admiralty way. Lekki Phase 1 Lagos</p>
         </div>
       </div>
       <div className='bottomFooter'>
         <div className='africontainer'>
-          <p>© 2022 FleetCare All rights reserved.</p>
+          <p>© 2022 Afrihealth Ltd All rights reserved.</p>
         </div>
 
         <div className='privacy'>

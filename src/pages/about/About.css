@@ -18,6 +18,7 @@
   font-weight: 600;
   font-size: 28px;
   color: #090f47;
+  padding-top: 2rem;
 }
 
 .about-top-left p {
@@ -30,6 +31,12 @@
   color: #8487a3;
 }
 
+.about-top-right {
+  position: relative;
+  margin-top: 4rem;
+  margin-left: 2rem;
+  /* margin-right: 2rem; */
+}
 .about-top-right p {
   font-style: normal;
   font-weight: 400;
@@ -38,24 +45,25 @@
   letter-spacing: 0.02em;
   color: #8487a3;
   margin: 0;
+  padding-right: 2rem;
 }
 
 .what-we-do {
-  width: 20%;
-  display: flex;
-  align-items: center;
-  background: #ffffff;
-  border-radius: 22.65px;
-  transform: rotate(-17.1deg);
-  margin-left: -2rem;
+  position: absolute;
+  top: -2.5rem;
+  left: -2.5rem;
 }
 
-.what-we-do p {
-  font-weight: 500;
-  font-size: 13px;
-  color: #090f47;
+.aboout-gallery {
+  display: flex;
+  padding-left: 2rem;
 }
-.about-gallery {
+.gallery-images > img {
+  max-width: 95%;
+  height: auto;
+  margin: 2rem;
+}
+/* .about-gallery {
   display: grid;
   padding: 2rem;
   grid-template-areas:
@@ -112,7 +120,7 @@
   position: relative;
   padding: 0.2rem;
   grid-area: six;
-}
+} */
 
 /* .image-gallery img {
   width: 100%;
@@ -121,10 +129,9 @@
 .stand-out {
   margin-bottom: 6rem;
   padding: 4rem 2rem 4rem 2rem;
-  position: relative;
 }
 
-.stand-out h3 {
+.stand-out-header h3 {
   font-weight: 700;
   font-size: 36px;
   line-height: 34px;
@@ -142,24 +149,14 @@
   color: #8487a3;
   text-align: justify;
 }
-
+.stand-out-header {
+  position: relative;
+  margin-top:4rem;
+}
 .why-us {
   position: absolute;
-  width: 10%;
-  display: flex;
-  align-items: center;
-  background: #ffffff;
-  border-radius: 22.65px;
-  transform: rotate(23.37deg);
-  right: 25%;
-  bottom: 96%;
-}
-
-.why-us p {
-  font-weight: 500;
-  font-size: 12px;
-  color: #090f47;
-  margin: 0;
+  top: -2rem;
+  right: 22%;
 }
 
 .mission-vision-div {
@@ -194,19 +191,18 @@
   margin: 0;
 }
 
-.mission-vision-head > p {
+.mission-vision-head p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 34px;
   letter-spacing: 0.02em;
   color: #8487a3;
-  text-align: justify;
 }
 
 .mission-vision-head > div {
   position: absolute;
-  top: 8%;
+  top: 20%;
   left: 20%;
 }
 
@@ -223,7 +219,10 @@
   line-height: 0;
   margin-bottom: -0.3rem;
 }
-
+.mission-vision-text {
+  padding: 2rem;
+  text-align: left;
+}
 .our-values {
   position: absolute;
   width: 10%;
@@ -245,6 +244,7 @@
 
 .team {
   margin-bottom: 6rem;
+  padding: 2rem;
 }
 
 .team-header {
@@ -338,6 +338,7 @@
 @media only screen and (max-width: 768px) {
   .about-top-div {
     flex-direction: column;
+    padding-top: 6rem;
   }
 
   .about-top-left {
@@ -348,25 +349,34 @@
     width: 100%;
   }
 
-  .about-top-left p {
-    width: 100%;
+  .about-top-left h3 {
+    font-size: 24px;
   }
 
-  .what-we-do {
-    display: none;
+  .about-top-left p {
+    width: 100%;
+    padding-top: 2rem;
   }
+
+  /* .what-we-do {
+    display: none;
+  } */
 
   .stand-out {
     padding: 0;
   }
 
   .why-us {
-    display: none;
+    right: 2%;
   }
-
+  .stand-out-header h3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
   .stand-out p {
     font-size: 15px;
     line-height: 25px;
+    padding: 2rem;
     letter-spacing: 0.02em;
   }
 
@@ -391,22 +401,28 @@
   }
 
   .mission-vision-head > div {
-    top: 6%;
+    top: 15%;
     left: 36%;
   }
 
   .mission-vision-head p {
-    text-align: center;
+    text-align: left;
   }
 
   .board-img {
     margin-bottom: 2rem;
+    margin-top: 2rem;
   }
 
   .board-img:nth-child(even) {
     margin-top: 0rem;
   }
-
+  .team-header h3 {
+    font-size: 24px;
+  }
+  .name-position {
+    padding-top: 2rem;
+  }
   .team-img {
     margin-bottom: 2rem;
   }
