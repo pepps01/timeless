@@ -14,7 +14,8 @@ const Homepage = () => {
         <div className='homepage-top-div'>
           <div className='homepage-left' data-aos='fade-right'>
             <div className='home-image'>
-              <img src='/images/doctor-pics.svg' alt='' />
+              <img src='/images/shape 2.png' alt='' className="absolute -top-10 -left-10 w-[90px] h-[90px]" />
+              <img src='/images/doctor-pics.svg' alt='' className='home-image-img' />
             </div>
             <div className='mobile-our-patners'>
               <p>Our Partners:</p>
