@@ -281,12 +281,17 @@
   .about-top-div {
     flex-direction: column;
     padding-top: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .about-top-left {
     width: 100%;
   }
-
+  .about-gallery {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   .about-top-right {
     width: 100%;
   }
@@ -298,6 +303,9 @@
   .about-top-left p {
     width: 100%;
     padding-top: 2rem;
+  }
+  .mission-vision-head h3 {
+    font-size: 60px;
   }
 
   /* .what-we-do {

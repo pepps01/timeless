@@ -221,7 +221,7 @@ const About = () => {
             <div className='team-img'>
               <img src='/images/analyst.png' alt='Afri-health Team' />
               <div className='name-position'>
-                <h5>Temitope <br/> Okewande</h5>
+                <h5>Temitope Okewande</h5>
                 <p>Quality Assurance Analyst <br/> / Tester</p>
               </div>
             </div>
