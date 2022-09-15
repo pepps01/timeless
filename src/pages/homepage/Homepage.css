@@ -338,6 +338,8 @@ p {
   .homepage-top-div {
     flex-direction: column-reverse;
     margin-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .head-content > h3 {
     text-align: left;
@@ -395,6 +397,8 @@ p {
 
   .homepage-feature-div {
     margin-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .feature-body {
@@ -420,6 +424,8 @@ p {
 
   .homepage-customers {
     flex-direction: column-reverse;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .customers-left {
