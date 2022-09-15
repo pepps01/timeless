@@ -10,20 +10,39 @@ const Homepage = () => {
   return (
     <>
       {/* navbar goes here */}
-      <div className='homepage-container'>
+      <div className='homepage-container relative'>
+        <img
+          src='/images/Afrihealth (1).png'
+          alt=''
+          className='absolute top-16'
+        />
+        <img
+          src='/images/Vector Lines.png'
+          alt=''
+          className='absolute top-60'
+        />
         <div className='homepage-top-div'>
           <div className='homepage-left' data-aos='fade-right'>
             <div className='home-image'>
-              <img src='/images/doctor-pics.svg' alt='' />
+              <img
+                src='/images/shape 2.png'
+                alt=''
+                className='absolute top-0 left-0 md:-top-10 md:-left-10 w-[90px] h-[90px]'
+              />
+              <img
+                src='/images/doctor-pics.svg'
+                alt=''
+                className='home-image-img'
+              />
             </div>
             <div className='mobile-our-patners'>
               <p>Our Partners:</p>
-              <div className='patners'>
-                <div className='patner-image'>
-                  <img src='/images/guardian.svg' alt='Afrihealth Patners' />
+              <div className='m-patners'>
+                <div className='m-patner-image'>
+                  <img src='/images/guardian.svg' alt='Afrihealth Patners' className='w-48 h-16 mr-14' />
                 </div>
                 <div className='patner-image'>
-                  <img src='/images/stroll.svg' alt='Afrihealth Patners' />
+                  <img src='/images/stroll.svg' alt='Afrihealth Patners' className='w-48 h-16 mr-14' />
                 </div>
                 <div className='patner-image'>
                   <img src='/images/nafdac.svg' alt='Afrihealth Patners' />
@@ -32,6 +51,10 @@ const Homepage = () => {
             </div>
           </div>
           <div className='homepage-right' data-aos='fade-left'>
+            <div className='hidden md:flex flex-col justify-center items-center absolute z-100 -bottom-16 -right-16'>
+              <img src='/images/scroller.png' alt='scroller' className='' />
+              <p>Scroll Down</p>
+            </div>
             <div className='head-content'>
               <h3>
                 Empathetic and convenient <span>healthcare</span> for you and
@@ -89,10 +112,18 @@ const Homepage = () => {
               <p>Our Partners:</p>
               <div className='patners'>
                 <div className='patner-image'>
-                  <img src='/images/guardian.svg' alt='Afrihealth Patners' />
+                  <img
+                    src='/images/guardian.svg'
+                    alt='Afrihealth Patners'
+                    className='w-48 h-16 mr-14'
+                  />
                 </div>
                 <div className='patner-image'>
-                  <img src='/images/stroll.svg' alt='Afrihealth Patners' />
+                  <img
+                    src='/images/stroll.svg'
+                    alt='Afrihealth Patners'
+                    className='w-48 h-16 mr-14'
+                  />
                 </div>
                 <div className='patner-image'>
                   <img src='/images/nafdac.svg' alt='Afrihealth Patners' />
@@ -169,52 +200,50 @@ const Homepage = () => {
           <div className='customers-left' data-aos='zoom-in-right'>
             <div className='customer-item trans-14'>
               <div className='customer-img'>
-                <img src='/images/person.png' alt='' />
+                <img src='/images/img2.3.png' alt='' className='rotate-14 md:rotate-12' />
               </div>
               <div className='customer-comment'>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                  gravida dictum euismod mauris placerat nulla.
+                  Afrihealth has helped getting access to medical professionals
+                  seamless and easy.
                 </p>
                 <h5>Collins Gabriel</h5>
-                <p>Medical Personnel</p>
+                <p>Rigour+ Customer</p>
               </div>
             </div>
-            <div className='customer-item mL8'>
+            <div className='customer-item mL8 ml-2 md:ml-0'>
               <div className='customer-img'>
                 <img src='/images/person2.png' alt='' />
               </div>
               <div className='customer-comment'>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                  gravida dictum euismod mauris placerat nulla.
+                  Afrihealth creates a seamless connection between all the
+                  players in the healthcare space.
                 </p>
                 <h5>Martins Aremu</h5>
                 <p>Medical Personnel</p>
               </div>
             </div>
-            <div className='customer-item'>
+            <div className='customer-item ml-4 md:ml-0'>
               <div className='customer-img'>
                 <img src='/images/person.png' alt='' />
               </div>
               <div className='customer-comment'>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                  gravida dictum euismod mauris placerat nulla.
+                  As a pharmacy, seeing the smooth onboarding process of
+                  pharmachain has made them the right partner
                 </p>
                 <h5>James Ndonga</h5>
-                <p>Medical Personnel</p>
+                <p>Medical Professional</p>
               </div>
             </div>
           </div>
           <div className='customers-right' data-aos='zoom-in-left'>
             <h3>What Our Customers Say</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus
-              proin quam gravida nec, vulputate aliquet auctor porta
-              sollicitudin. Eget cras cras eget adipiscing tortor scelerisque.
-              Amet duis sit pharetra senectus erat congue. Morbi enim, in purus
-              sit mattis euismod sed tristique
+              We believe that the best way to provide the best support to our
+              partners and users is by listening to them, hear are what some of
+              our partners and users have said.
             </p>
           </div>
         </div>

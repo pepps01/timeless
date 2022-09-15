@@ -175,7 +175,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className='team-contents'>
+          <div className='team-contents flex-row-reverse md:flex-row'>
             <div className='team-img'>
               <img src='/images/coo.png' alt='Afri-health Team' />
               <div className='name-position'>
@@ -183,7 +183,7 @@ const About = () => {
                 <p>Chief Operating Officer</p>
               </div>
             </div>
-            <div className='team-img'>
+            <div className='team-img tM'>
               <img src='/images/cto.png' alt='Afri-health Team' />
               <div className='name-position'>
                 <h5>Michael Falade</h5>
@@ -197,7 +197,7 @@ const About = () => {
                 <p>Growth Marketing Executive</p>
               </div>
             </div>
-            <div className='team-img'>
+            <div className='team-img tM'>
               <img src='/images/engineer1.png' alt='Afri-health Team' />
               <div className='name-position'>
                 <h5>Phillip Olalere</h5>
@@ -211,7 +211,7 @@ const About = () => {
                 <p>Backend Engineer</p>
               </div>
             </div>
-            <div className='team-img'>
+            <div className='team-img tM'>
               <img src='/images/designer.png' alt='Afri-health Team' />
               <div className='name-position'>
                 <h5>Samuel Yusuf</h5>
@@ -221,11 +221,11 @@ const About = () => {
             <div className='team-img'>
               <img src='/images/analyst.png' alt='Afri-health Team' />
               <div className='name-position'>
-                <h5>Temitope Okewande</h5>
-                <p>Quality Assurance Analyst / Tester</p>
+                <h5>Temitope <br/> Okewande</h5>
+                <p>Quality Assurance Analyst <br/> / Tester</p>
               </div>
             </div>
-            <div className='team-img'>
+            <div className='team-img tM'>
               <img src='/images/backend2.png' alt='Afri-health Team' />
               <div className='name-position'>
                 <h5>Precious Ani</h5>
@@ -239,7 +239,7 @@ const About = () => {
                 <p>Dev-Ops Engineer</p>
               </div>
             </div>
-            <div className='team-img'>
+            <div className='team-img tM'>
               <img src='/images/product-manager.png' alt='Afri-health Team' />
               <div className='name-position'>
                 <h5>Abudiaro Idowu</h5>
@@ -253,10 +253,10 @@ const About = () => {
               />
               <div className='name-position'>
                 <h5>Blessing Akuma</h5>
-                <p>Product Operations Associate</p>
+                <p>Product Operations <br/> Associate</p>
               </div>
             </div>
-            <div className='team-img'>
+            <div className='team-img tM'>
               <img src='/images/frontend1.png' alt='Afri-health Team' />
               <div className='name-position'>
                 <h5>Ozuem Will</h5>

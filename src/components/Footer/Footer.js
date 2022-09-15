@@ -66,10 +66,10 @@ const Footer = () => {
             comfort of a smartphone.
           </p>
           <div className='social'>
-            <a href="https://linkedin.com/company/afrihealth-ltd">
+            <a href="https://web.facebook.com/afrihealthlimited">
               <ImageComponent src='Facebook.png' className='socialimg' />
             </a>
-            <a href="https://linkedin.com/company/afrihealth-ltd">
+            <a href="https://www.instagram.com/weareafrihealth/">
               <ImageComponent src='Instagram.png' className='socialimg' />
             </a>
             <a href="https://linkedin.com/company/afrihealth-ltd">

@@ -9,7 +9,9 @@ footer {
 }
   .topFooter {
     display: flex;
-    padding: 6rem;
+    padding-top: 0px;
+    padding-left: 5.625rem;
+    padding-right: 5.625rem;
     padding-bottom: 0;
     justify-content: space-between;
   }
@@ -25,6 +27,7 @@ footer {
   }
   .topFooter1 {
     padding: 2rem;
+    width: 35%;
   }
   .topFooter1 > p {
     color: #090f47;
@@ -42,7 +45,9 @@ footer {
     padding: 2rem;
   }
   .topFooter2 > h6 {
-    color: #6b5dd3;
+    color: #6B5DD3;
+    font-weight: bold;
+    padding-top: 20px;
     font-size: 1rem;
     margin-top: 0.2rem;
   }
@@ -70,13 +75,15 @@ footer {
     padding: 2rem;
   }
 }
-@media screen and (max-width: 1728px) {
   .bottomFooter {
     display: flex;
     justify-content: space-between;
     color: #6b5dd3;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    border-top: 1px solid #6b5dd3;
+    padding-left: 5.625rem;
+    padding-right: 5.625rem;
+    padding-top: 73.45px;
+    padding-bottom: 20.45px;
   }
   .africontainer {
     padding-left: 2rem;
@@ -91,8 +98,11 @@ footer {
     color: #6b5dd3;
     text-decoration: none;
   }
-}
+
 @media screen and (max-width: 768px) {
+  .topFooter1 {
+    width: 100%;
+  }
   .bottomFooter {
     flex-direction: column-reverse;
     justify-content: center;

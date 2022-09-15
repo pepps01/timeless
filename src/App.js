@@ -1,4 +1,4 @@
-import React, { useState , useEffect } from 'react';
+import React, { useState , useEffect, useRef } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import About from './pages/about/About';
@@ -9,7 +9,6 @@ import Products from './pages/products/Products';
 import Pricing from './pages/pricing/Pricing';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import { Links } from './components/Header/Links';
 import CareerDetails from './pages/careers/CareerDetails';
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -18,7 +17,6 @@ import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
-
   useEffect(() => {
     Aos.init({ duration: 700 });
   }, []);
