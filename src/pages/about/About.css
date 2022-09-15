@@ -381,8 +381,12 @@
     padding-left: 2rem;
     padding-right: 2rem;
   }
+  .board-img > img {
+    width: 230px;
+    height: 310px;
+  }
   .board-img {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     margin-top: 2rem;
   }
 

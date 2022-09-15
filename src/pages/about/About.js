@@ -177,7 +177,7 @@ const About = () => {
 
           <div className='team-contents flex-row-reverse md:flex-row'>
             <div className='team-img'>
-              <img src='/images/coo.png' alt='Afri-health Team' />
+              <img src='/images/jude.png' alt='Afri-health Team' />
               <div className='name-position'>
                 <h5>Chikezie Jude</h5>
                 <p>Chief Operating Officer</p>
@@ -191,14 +191,14 @@ const About = () => {
               </div>
             </div>
             <div className='team-img'>
-              <img src='/images/growth.png' alt='Afri-health Team' />
+              <img src='/images/emma.png' alt='Afri-health Team' />
               <div className='name-position'>
                 <h5>Emmanuel Afolabi</h5>
                 <p>Growth Marketing Executive</p>
               </div>
             </div>
             <div className='team-img tM'>
-              <img src='/images/engineer1.png' alt='Afri-health Team' />
+              <img src='/images/phill.png' alt='Afri-health Team' />
               <div className='name-position'>
                 <h5>Phillip Olalere</h5>
                 <p>Senior Software Engineer</p>
@@ -212,7 +212,7 @@ const About = () => {
               </div>
             </div>
             <div className='team-img tM'>
-              <img src='/images/designer.png' alt='Afri-health Team' />
+              <img src='/images/sam.png' alt='Afri-health Team' />
               <div className='name-position'>
                 <h5>Samuel Yusuf</h5>
                 <p>Lead Designer</p>
@@ -240,7 +240,7 @@ const About = () => {
               </div>
             </div>
             <div className='team-img tM'>
-              <img src='/images/product-manager.png' alt='Afri-health Team' />
+              <img src='/images/idowu.png' alt='Afri-health Team' />
               <div className='name-position'>
                 <h5>Abudiaro Idowu</h5>
                 <p>Product Manager</p>
@@ -257,14 +257,14 @@ const About = () => {
               </div>
             </div>
             <div className='team-img tM'>
-              <img src='/images/frontend1.png' alt='Afri-health Team' />
+              <img src='/images/will.png' alt='Afri-health Team' />
               <div className='name-position'>
-                <h5>Ozuem Will</h5>
+                <h5>Ozuem Williams</h5>
                 <p>Frontend Engineer</p>
               </div>
             </div>
             <div className='team-img'>
-              <img src='/images/hr.png' alt='Afri-health Team' />
+              <img src='/images/hap.png' alt='Afri-health Team' />
               <div className='name-position'>
                 <h5>Happiness Paul</h5>
                 <p>Human Resource Manager</p>
