@@ -92,7 +92,7 @@
 }
 .stand-out-header {
   position: relative;
-  margin-top:4rem;
+  margin-top: 4rem;
 }
 .why-us {
   position: absolute;
@@ -148,8 +148,8 @@
 }
 
 .mission-vision-head > div > svg {
-    margin-top: 1rem;
-    margin-left: 1.5rem;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
 }
 .mission-vision-head > div > p {
   font-style: normal;
@@ -350,24 +350,29 @@
   .mission-vision-head p {
     text-align: left;
   }
-.team-img {
-  margin: 0;
-}
-.tM {
-  margin-top: 8rem;
-}
-.team-img > img {
-  width: 134px;
-  height: 180px;
-}
-.name-position > h5 {
- font-size: 14px;
- line-height: 14.45px;
-}
-.name-position > p {
- font-size: 12px;
- line-height: 14.45px;
-}
+  .team-img {
+    margin: 0;
+  }
+  .tM {
+    margin-top: 8rem;
+  }
+  .team-img > img {
+    width: 134px;
+    height: 180px;
+  }
+  .name-position > h5 {
+    font-size: 14px;
+    line-height: 14.45px;
+  }
+  .name-position > p {
+    font-size: 12px;
+    line-height: 14.45px;
+  }
+  .team {
+    margin-bottom: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   .board-img {
     margin-bottom: 2rem;
     margin-top: 2rem;
