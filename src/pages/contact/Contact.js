@@ -1,8 +1,38 @@
-import React from 'react'
+import React,{useRef,useEffect,useState} from 'react'
 import './Contact.css'
 import ContactIcon from '../../assets/pngs/contactIcon.png'
+import emailjs from '@emailjs/browser';
+import { toast } from "react-toastify";
+
 
 const Contact = () => {
+
+  const [loading, setLoading] = useState(false)
+
+    const form = useRef();
+    console.log("inside")
+    const sendEmail = (e) => {
+      setLoading(true)
+      e.preventDefault();
+  
+      emailjs.sendForm('service_np50l9e', 'template_9ad2tt9', form.current, 'BTZvIt_Ro6cgVmsg-')
+        .then((result) => {
+          setLoading(false)
+          toast.success("Your Email has been sent successfully")
+            // console.log(result.text);
+        }, (error) => {
+
+            setLoading(false)
+            toast.error("There was an error sending your request. Please try again later. Thank you")
+            // console.log(error.text);
+        });
+    };
+    
+    // useEffect(() => {
+    //   sendEmail()
+    // }, [])
+
+
   return (
     <div className="flex items-center bg-[#e7e1f2]  justify-center xl:px-9 lg:px-9 sm:p-9  md:p-9 md:pb-[120px] lg:pb-[120px] xl:pb-[120px] pb-[120px] pt-[19px]  sm:px-[120px] md:px-[120px] bg-gradient-to-r from-[#e7e1f2] to-[#e9eaf5]">
       {/* xl:w-[90%] lg:w-[95%] md:w-[90%] sm:w-[90%] w-[90%] */}
@@ -355,99 +385,87 @@ const Contact = () => {
         </div>
 
         <div className=" lg:z-20 xl:z-20 z-0 bg-white shadow-md w-[80%] rounded-[34.33px] pt-[51.31px] pl-[37.52px] pr-[38.52px]  pb-[25.98px] mb-4 mt-[41px] lg:ml-[60px] xl:ml-[60px]">
-          <div class="">
-            <form class="">
-              <div class="mb-4">
+          <div className="">
+            <form className="" ref={form} onSubmit={sendEmail}>
+              <div className="mb-4">
                 <label
-                  class="block text-gray-700 text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
-                  for="username"
+                  className="block mb-2 mx-0 text-[0.767rem] font-medium text-[#090F47] "
+                  htmlFor="username"
                 >
                   Full Name
                 </label>
                 <input
-                  class=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="fullname"
+                  className=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="name"
                   type="text"
                   placeholder="Full Name"
                 />
               </div>
 
-              <div class="mb-4">
+              <div className="mb-4">
                 <label
-                  class="block text-gray-700 mt-[29px] text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
-                  for="username"
+                  className="block mb-2 mx-0 text-[0.767rem] font-medium text-[#090F47] "
+                  htmlFor="username"
                 >
                   Email
                 </label>
                 <input
-                  class=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="email"
                   type="text"
                   placeholder="Email"
                 />
               </div>
 
-              <div class="mb-4">
+              <div className="mb-4">
                 <label
-                  class="block  text-[#090F47] mt-[29px] text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
-                  for="username"
+                  className="block mb-2 mx-0 text-[0.767rem] font-medium text-[#090F47] "
+                  htmlFor="username"
                 >
                   Phone Number
                 </label>
                 <input
-                  class=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="phone"
                   type="text"
                   placeholder="Phone Number"
                 />
               </div>
 
-              <div class="mb-4">
+              <div className="mb-4">
                 <label
-                  class="block text-gray-700 mt-[29px] text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
-                  for="Company"
+                  className="block mb-2 mx-0 text-[0.767rem] font-medium text-[#090F47] "
+                  htmlFor="Company"
                 >
                   Company
                 </label>
                 <input
-                  class=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="Company"
                   type="text"
                   placeholder="Company"
                 />
               </div>
 
-              <div class="mb-4">
-                <label
-                  class="block  text-gray-700 mt-[29px]  text-[0.75rem] leading-[12.02px] font-medium mb-2 mx-0"
-                  for="Company"
-                >
-                  Message
-                </label>
-                <input
-                  class=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="Company"
-                  type="text"
-                  placeholder="Message"
-                />
-              </div>
+             
 
-              <div class="mb-4">
+              <div className="mb-4">
                 <label
-                  for="message"
-                  class="block mb-2 mx-0 text-sm font-medium text-gray-900 dark:text-gray-400"
+                  htmlFor="message"
+                  className="block mb-2 mx-0 text-[0.767rem] font-medium text-[#090F47] "
                 >
                   Message
                 </label>
                 <textarea
                   id="message"
+                  name = "message"
                   rows="3"
-                  class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Add Message"
                 ></textarea>
               </div>
-              <div class="">
-                <div className="flex text-[#090F47] hover:text-blue-800">
+              <div className="">
+                {/* <div className="flex text-[#090F47] hover:text-blue-800">
                   <svg
                     
                     width="17"
@@ -463,18 +481,19 @@ const Contact = () => {
                   </svg>
 
                   <a
-                    class="inline-block font-bold text-sm "
+                    className="inline-block font-bold text-sm "
                     href="#"
                   >
                     Add Attachement
                   </a>
-                </div>
+                </div> */}
                 <div className = "flex justify-end ">
                   <button
-                    class="bg-[#6B5DD3] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                    type="button"
+                    className={`bg-[#6B5DD3]  text-white ${loading && 'bg-[#6b5dd38d] hover:bg-none'} font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline`}
+                    type="submit"
+                    disabled={loading}
                   >
-                    Submit
+                    {loading?"loading....":"Submit"}
                   </button>
                 </div>
               </div>

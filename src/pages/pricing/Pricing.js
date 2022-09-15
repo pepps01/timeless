@@ -2,7 +2,7 @@ import React from "react";
 import "./Pricing.css";
 import ImageComponent from "../../components/ImageComponent";
 
-const Card = ({ title, amount, text, features, className, color,buttonClass }) => {
+const Card = ({ title, amount, text, features, className, color,buttonClass, textMargin='mt-[39.72px]'}) => {
   return (
     <div className={className}>
       <h3 className={`${color} font-bold text-xl px-8 pt-[35.1px]`}>
@@ -12,7 +12,7 @@ const Card = ({ title, amount, text, features, className, color,buttonClass }) =
         <h1 className={`${color} text-[2.28rem] font-bold text-3xl `}>${amount}</h1>
         <p className='text-base text-[1.125rem]  ml-2 font-bold'>/ Month</p>
       </div>
-      <p className={`${color} text-sm mt-[39.72px] mb-[33.57px] px-8`}>{text}</p>
+      <p className={`${color} text-sm  mb-[33.57px] px-8 ${textMargin}`}>{text}</p>
       {features?.map((feature) => (
         <div className='flex  py-2 px-8'>
           <ImageComponent src='check.png' />
@@ -47,13 +47,14 @@ const Pricing = () => {
 
       <div className='flex flex-wrap justify-center items-center'>
         <Card
-          className='bg-white z-5 p-4 text-white rounded-2xl md:h-[33.125rem] mb-28 w-80 lg:mb-2 lg:-rotate-[10deg]  m-4'
+          className='bg-white z-5 p-4 py-4 text-white rounded-2xl md:h-[33.125rem] mb-28 w-80 lg:mb-2 lg:-rotate-[10deg]  m-4'
           title='Classic Afrihealth'
           amount='29'
           features={classicFeatures}
+          textMargin={"mt-[20.72px]"}
           color="text-PrimaryTextColor"
           text='Choose a prefered health price plan that works best for you and yours.'
-          buttonClass = {"p-4 w-full bg-afriSubHeader rounded-lg"}
+          buttonClass = {"p-4  w-full bg-afriSubHeader rounded-lg"}
         />
         <div className="relative"> 
           <ImageComponent src="Pills.png" className="absolute right-10 top-0 z-20" />

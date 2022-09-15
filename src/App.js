@@ -13,6 +13,8 @@ import { Links } from './components/Header/Links';
 import CareerDetails from './pages/careers/CareerDetails';
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,8 +25,10 @@ function App() {
   return (
     <>
       <Router className="App">
+      <ToastContainer />
         <Header setIsOpen={setIsOpen} isOpen={isOpen} />
         <div className="global">
+        
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/products" element={<Products />} />
