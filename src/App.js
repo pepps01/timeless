@@ -1,4 +1,4 @@
-import React, { useState , useEffect } from 'react';
+import React, { useState , useEffect, useRef } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import About from './pages/about/About';
@@ -15,7 +15,6 @@ import "aos/dist/aos.css";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
-
   useEffect(() => {
     Aos.init({ duration: 700 });
   }, []);

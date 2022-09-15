@@ -1,7 +1,7 @@
 .about-top-div {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 2rem 0rem 2rem;
+  padding: 4rem 5.625rem 0rem 5.625rem;
   margin-bottom: 6rem;
 }
 
@@ -59,76 +59,17 @@
   padding-left: 2rem;
 }
 .gallery-images > img {
-  max-width: 95%;
   height: auto;
-  margin: 2rem;
 }
-/* .about-gallery {
-  display: grid;
-  padding: 2rem;
-  grid-template-areas:
-    "one one two three"
-    "four five five six"
-    "four five five six";
-  margin-top: 4rem;
+.about-gallery {
+  display: block;
+  padding-left: 5.625rem;
+  padding-right: 5.625rem;
 }
-
-.image-gallery-1 > img {
-    height: 100%;
-}
-.image-gallery-1 {
-  width: 100%;
-  position: relative;
-  padding: 0.2rem;
-  grid-area: one;
-}
-.image-gallery-2 > img {
-    height: 100%;
-}
-.image-gallery-2 {
-  width: 100%;
-  position: relative;
-  padding: 0.2rem;
-  grid-area: two;
-}
-.image-gallery-3 {
-  width: 100%;
-  position: relative;
-  padding: 0.2rem;
-  grid-area: three;
-}
-.image-gallery-4 > img {
-    height: 100%;
-}
-.image-gallery-4 {
-  width: 100%;
-  position: relative;
-  padding: 0.2rem;
-  grid-area: four;
-}
-.image-gallery-5 {
-  width: 100%;
-  position: relative;
-  padding: 0.2rem;
-  grid-area: five;
-}
-.image-gallery-6 > img {
-    height: 100%;
-}
-.image-gallery-6 {
-  width: 100%;
-  position: relative;
-  padding: 0.2rem;
-  grid-area: six;
-} */
-
-/* .image-gallery img {
-  width: 100%;
-} */
 
 .stand-out {
   margin-bottom: 6rem;
-  padding: 4rem 2rem 4rem 2rem;
+  padding: 4rem 5.625rem 4rem 5.625rem;
 }
 
 .stand-out-header h3 {
@@ -164,7 +105,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0rem 5rem;
+  padding: 0rem 5.625rem;
   margin-bottom: 6rem;
 }
 
@@ -244,7 +185,8 @@
 
 .team {
   margin-bottom: 6rem;
-  padding: 2rem;
+  padding-left: 5.625rem;
+  padding-right: 5.625rem;
 }
 
 .team-header {

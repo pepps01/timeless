@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Header.css";
 import "../../App.css";
 import { Links } from "./Links";
@@ -6,6 +6,10 @@ import { Link, useLocation } from "react-router-dom";
 
 const Header = ({ setIsOpen, isOpen }) => {
   const pathname = useLocation().pathname;
+  // const scrollToTop = useRef(null);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname])
   return (
     <>
       <nav className='nav'>
