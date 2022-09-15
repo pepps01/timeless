@@ -307,7 +307,7 @@
 .team-contents {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .team-img {
@@ -408,7 +408,24 @@
   .mission-vision-head p {
     text-align: left;
   }
-
+.team-img {
+  margin: 0;
+}
+.tM {
+  margin-top: 8rem;
+}
+.team-img > img {
+  width: 134px;
+  height: 180px;
+}
+.name-position > h5 {
+ font-size: 14px;
+ line-height: 14.45px;
+}
+.name-position > p {
+ font-size: 12px;
+ line-height: 14.45px;
+}
   .board-img {
     margin-bottom: 2rem;
     margin-top: 2rem;

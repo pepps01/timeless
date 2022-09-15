@@ -10,7 +10,10 @@ module.exports = {
         PrimaryTextColor: "#090F47",
         SecondaryTextColor: "#8487A3",
       },
-    },
+      rotate: {
+        '14': '14deg',
+      }
+    }
   },
   plugins: [],
 };

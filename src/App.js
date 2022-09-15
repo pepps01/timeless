@@ -9,7 +9,6 @@ import Products from './pages/products/Products';
 import Pricing from './pages/pricing/Pricing';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import { Links } from './components/Header/Links';
 import CareerDetails from './pages/careers/CareerDetails';
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -22,7 +21,7 @@ function App() {
   }, []);
   return (
     <>
-      <Router className="App">
+      <Router className="App relative">
         <Header setIsOpen={setIsOpen} isOpen={isOpen} />
         <div className="global">
           <Routes>
