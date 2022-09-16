@@ -48,7 +48,7 @@ const Careers = () => {
           </div>
 
           <p className=" font-bold text-[3.25rem] text-[#090F47]">Careers</p>
-          <p className="text-[1.125rem] leading-[28px] mt-[22px]">
+          <p className="text-[1.125rem] text-center leading-[28px] mt-[22px]">
             Know your worth and find a that role that qualifies your skills with
             us.
           </p>
