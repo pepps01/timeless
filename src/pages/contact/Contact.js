@@ -10,18 +10,19 @@ const Contact = () => {
   const [loading, setLoading] = useState(false)
 
     const form = useRef();
-    console.log("inside")
+    
     const sendEmail = (e) => {
       setLoading(true)
       e.preventDefault();
-  
       emailjs.sendForm('service_np50l9e', 'template_9ad2tt9', form.current, 'BTZvIt_Ro6cgVmsg-')
         .then((result) => {
+          
           setLoading(false)
           toast.success("Your Email has been sent successfully")
+          form.current.reset();
             // console.log(result.text);
         }, (error) => {
-
+            
             setLoading(false)
             toast.error("There was an error sending your request. Please try again later. Thank you")
             // console.log(error.text);
@@ -397,6 +398,7 @@ const Contact = () => {
                 <input
                   className=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="name"
+                  name="name"
                   type="text"
                   placeholder="Full Name"
                 />
@@ -412,6 +414,7 @@ const Contact = () => {
                 <input
                   className=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="email"
+                  name="email"
                   type="text"
                   placeholder="Email"
                 />
@@ -427,6 +430,7 @@ const Contact = () => {
                 <input
                   className=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="phone"
+                  name="phone"
                   type="text"
                   placeholder="Phone Number"
                 />
@@ -442,6 +446,7 @@ const Contact = () => {
                 <input
                   className=" contactInput appearance-none border rounded w-full py-3 mt-[22.32px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="Company"
+                  name="company"
                   type="text"
                   placeholder="Company"
                 />
